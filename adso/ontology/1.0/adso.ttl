@@ -1,0 +1,1557 @@
+@prefix : <https://w3id.org/adso/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.geonames.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://w3id.org/adso/ontology/> .
+
+<https://w3id.org/adso/ontology/> rdf:type owl:Ontology ;
+                                   owl:imports <http://www.geonames.org/ontology> ,
+                                               <https://www.w3.org/ns/prov> ,
+                                               <http://qudt.org/2.0/schema/SCHEMA_QUDT-v2.0.ttl> ;
+                                   dcterms:title "The Agave and Dasyirion Spirit Ontology (ADSO)" ;
+                                   dc:creator "Thomas Wilmering" ;
+                                   dc:description "The Agave and Dasyirion Spirit Ontology (ADSO) provides concepts and properties for the description of distilled beverages based on cooked agave and dasylirion." ;
+                                   dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
+                                   owl:versionInfo "Revision: 1.0b1" ;
+                                   dc:contributor "G. Fazekas" ;
+                                   dc:rights "This ontology is distributed under a Creative Commons License - http://creativecommons.org/licenses/by-sa/4.0/" ;
+                                   dcterms:date "2018-04-08"^^xsd:date .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/adso/ontology/additive
+:additive rdf:type owl:ObjectProperty ;
+          rdfs:domain :AddingDistillateAdditive ,
+                      :Flavoring ;
+          rdfs:range :Additive ;
+          rdfs:comment "links additives used for flavoring of a distillate before or after final distillation" ;
+          rdfs:label "additive" .
+
+
+###  https://w3id.org/adso/ontology/amount
+:amount rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf qudt:value ,
+                           owl:topObjectProperty ;
+        rdfs:domain :Specification ;
+        rdfs:range :Amount ;
+        rdfs:comment "specifies the amount of a compound in a spirit's specifications" ;
+        rdfs:label "amount" .
+
+
+###  https://w3id.org/adso/ontology/amount_of
+:amount_of rdf:type owl:ObjectProperty ;
+           rdfs:domain :Amount ;
+           rdfs:range :DistillateProduct ;
+           rdfs:comment "associates instances of Amount to a partial distillate" ;
+           rdfs:label "amount_of" .
+
+
+###  https://w3id.org/adso/ontology/aroma
+:aroma rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :sensory_charasteristic ;
+       rdfs:comment "links tasting notes to an aroma" ;
+       rdfs:label "aroma" .
+
+
+###  https://w3id.org/adso/ontology/available_in
+:available_in rdf:type owl:ObjectProperty ;
+              rdfs:domain :AgaveDasylirionSpirit ;
+              rdfs:range :Bottle ;
+              rdfs:comment "associates a spirit with a distribution container, e.g. a glass bottle" ;
+              rdfs:label "available_in" .
+
+
+###  https://w3id.org/adso/ontology/average_atmospheric_pressure
+:average_atmospheric_pressure rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf qudt:value ,
+                                                 :weather_attribute ;
+                              rdfs:comment "average atmospheric pressure" ;
+                              rdfs:label "average_atmospheric_pressure" .
+
+
+###  https://w3id.org/adso/ontology/average_humidity
+:average_humidity rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf qudt:value ,
+                                     :weather_attribute ;
+                  rdfs:comment "average humidity" ;
+                  rdfs:label "average_humidity" .
+
+
+###  https://w3id.org/adso/ontology/average_precipitation
+:average_precipitation rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf qudt:value ,
+                                          :weather_attribute ;
+                       rdfs:comment "average precipitation" ;
+                       rdfs:label "average_precipitation" .
+
+
+###  https://w3id.org/adso/ontology/average_temperature
+:average_temperature rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf qudt:value ,
+                                        :weather_attribute ;
+                     rdfs:comment "average temperature" ;
+                     rdfs:label "average_temperature" .
+
+
+###  https://w3id.org/adso/ontology/begins_at_volume
+:begins_at_volume rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf qudt:value ;
+                  rdfs:domain :PartialDistillate ;
+                  rdfs:range qudt:QuantityValue ;
+                  rdfs:comment "specifies the beginning of a partial distillate in volume" ;
+                  rdfs:label "amount_obegins_at_volume" .
+
+
+###  https://w3id.org/adso/ontology/bottle
+:bottle rdf:type owl:ObjectProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :Bottling ;
+        rdfs:range [ rdf:type owl:Restriction ;
+                     owl:onProperty :bottle ;
+                     owl:someValuesFrom :Bottle
+                   ] ;
+        rdfs:comment "associates the bottling task with a bottle" ;
+        rdfs:label "bottle" .
+
+
+###  https://w3id.org/adso/ontology/brand
+:brand rdf:type owl:ObjectProperty ;
+       rdfs:domain :AgaveDasylirionSpirit ;
+       rdfs:range :Brand ;
+       rdfs:comment "associates a spirit with the brand" ;
+       rdfs:label "brand" .
+
+
+###  https://w3id.org/adso/ontology/brand_distillery
+:brand_distillery rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Brand ;
+                  rdfs:range :Distillery ;
+                  rdfs:comment "associates a brand with a distillery" ;
+                  rdfs:label "brand_distillery" .
+
+
+###  https://w3id.org/adso/ontology/climate
+:climate rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :location_attribute ;
+         rdfs:domain :Location ;
+         rdfs:comment "specifies the climate in the region of a location" ;
+         rdfs:label "climate" .
+
+
+###  https://w3id.org/adso/ontology/company
+:company rdf:type owl:ObjectProperty ;
+         rdfs:domain :Brand ;
+         rdfs:range :Company ;
+         rdfs:comment "associates a brand with a company" ;
+         rdfs:label "company" .
+
+
+###  https://w3id.org/adso/ontology/compound
+:compound rdf:type owl:ObjectProperty ;
+          rdfs:domain :Specification ;
+          rdfs:range :Compound ;
+          rdfs:comment "links a specification to a compound found in a spirit" ;
+          rdfs:label "compound" .
+
+
+###  https://w3id.org/adso/ontology/distillery
+:distillery rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Distillation ;
+            rdfs:range :Distillery ;
+            rdfs:comment "links the distillation task to a distillery" ;
+            rdfs:label "distillery" .
+
+
+###  https://w3id.org/adso/ontology/elevation
+:elevation rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf qudt:value ,
+                              :location_attribute ;
+           rdfs:comment "specifies the elevation of a location" ;
+           rdfs:label "elevation" .
+
+
+###  https://w3id.org/adso/ontology/ends_at_volume
+:ends_at_volume rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf qudt:value ;
+                rdfs:domain :PartialDistillate ;
+                rdfs:range qudt:QuantityValue ;
+                rdfs:comment "specifies the end of a partial distillate in volume" ;
+                rdfs:label "ends_at_volume" .
+
+
+###  https://w3id.org/adso/ontology/geonames_feature
+:geonames_feature rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Location ;
+                  rdfs:range geo:Feature ;
+                  rdfs:comment "links a location with a GeoNames Feature" ;
+                  rdfs:label "geonames_feature" .
+
+
+###  https://w3id.org/adso/ontology/has_volume
+:has_volume rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf qudt:value ;
+            rdfs:domain :DistillateProduct ,
+                        :FermentedJuice ,
+                        :Juice ,
+                        :LiquidAdditive ;
+            rdfs:comment "specifies the volume of a liquid" ;
+            rdfs:label "has_volume" .
+
+
+###  https://w3id.org/adso/ontology/label
+:label rdf:type owl:ObjectProperty ;
+       rdfs:domain :Bottle ;
+       rdfs:range :Label ;
+       rdfs:comment "links a bottle with its label." ;
+       rdfs:label "label" .
+
+
+###  https://w3id.org/adso/ontology/location
+:location rdf:type owl:ObjectProperty ;
+          rdfs:domain :Task ;
+          rdfs:range :Location ;
+          rdfs:comment "links a task with its location" ;
+          rdfs:label "location" .
+
+
+###  https://w3id.org/adso/ontology/location_attribute
+:location_attribute rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Location ;
+                    rdfs:comment "specifies an attribute for the description of a location" ;
+                    rdfs:label "location_attribute" .
+
+
+###  https://w3id.org/adso/ontology/material
+:material rdf:type owl:ObjectProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Tool ;
+          rdfs:range :Material ;
+          rdfs:comment "specifies the material of a production tool" ;
+          rdfs:label "material" .
+
+
+###  https://w3id.org/adso/ontology/maturity
+:maturity rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf qudt:value ;
+          rdfs:domain :Plant ;
+          rdfs:comment "specifies the maturity of  plant" ;
+          rdfs:label "maturity" .
+
+
+###  https://w3id.org/adso/ontology/part_of
+:part_of rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :PartialDistillate ;
+         rdfs:range :PureDistillate ;
+         rdfs:comment "links a partial distillate to the complete" ;
+         rdfs:label "part_of" .
+
+
+###  https://w3id.org/adso/ontology/plant_variety
+:plant_variety rdf:type owl:ObjectProperty ;
+               rdfs:domain :Plant ;
+               rdfs:range :PlantVariety ;
+               rdfs:comment "associates a plant with its variety" ;
+               rdfs:label "plant_variety" .
+
+
+###  https://w3id.org/adso/ontology/process
+:process rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :AgaveDasylirionSpirit ;
+         rdfs:range :Process ;
+         rdfs:comment "links a spitit with its production process" ;
+         rdfs:label "process" .
+
+
+###  https://w3id.org/adso/ontology/product
+:product rdf:type owl:ObjectProperty ;
+         rdfs:domain :AgaveDasylirionSpirit ;
+         rdfs:range :DistillateProduct ;
+         rdfs:comment "links a distributed product with a distillate produced in the prodcution process" ;
+         rdfs:label "product" .
+
+
+###  https://w3id.org/adso/ontology/purity
+:purity rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf qudt:value ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :AgaveDasylirionSpirit ;
+        rdfs:comment "percentage of agave/dasylirion product in 'Mixto'" ;
+        rdfs:label "purity" .
+
+
+###  https://w3id.org/adso/ontology/sensory_charasteristic
+:sensory_charasteristic rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdfs:domain :TastingNotes ;
+                        rdfs:comment "links tasting note to sensory characteristics" ;
+                        rdfs:label "sensory_characteristic" .
+
+
+###  https://w3id.org/adso/ontology/slope
+:slope rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf qudt:value ,
+                          :location_attribute ;
+       rdfs:comment "specifies the slope of a location" ;
+       rdfs:label "slope" .
+
+
+###  https://w3id.org/adso/ontology/slope_orientation
+:slope_orientation rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :location_attribute ;
+                   rdfs:comment "specifies the slope orientation of a location" ;
+                   rdfs:label "slope_orientation" .
+
+
+###  https://w3id.org/adso/ontology/soil_properties
+:soil_properties rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :location_attribute ;
+                 rdfs:comment "specifies the soil properties of a location" ;
+                 rdfs:label "soil_properties" .
+
+
+###  https://w3id.org/adso/ontology/tactile
+:tactile rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :sensory_charasteristic ;
+         rdfs:comment "links tasting notes to tactile charasterstics" ;
+         rdfs:label "tactile" .
+
+
+###  https://w3id.org/adso/ontology/task
+:task rdf:type owl:ObjectProperty ,
+               owl:InverseFunctionalProperty ;
+      rdfs:domain :Process ;
+      rdfs:range :Task ;
+      rdfs:comment "links the process to individual tasks" ;
+      rdfs:label "task" .
+
+
+###  https://w3id.org/adso/ontology/tool
+:tool rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:domain :Task ;
+      rdfs:range :Tool ;
+      rdfs:label "tool" .
+
+
+###  https://w3id.org/adso/ontology/used_amount
+:used_amount rdf:type owl:ObjectProperty ;
+             rdfs:domain :Blending ;
+             rdfs:range :Amount ;
+             rdfs:comment "specifies the amount of a distillate used in blending" ;
+             rdfs:label "used_amount" .
+
+
+###  https://w3id.org/adso/ontology/visual
+:visual rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :sensory_charasteristic ;
+        rdfs:comment "links tasting notes to visual characteristics" ;
+        rdfs:label "visual" .
+
+
+###  https://w3id.org/adso/ontology/volume
+:volume rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf qudt:value ;
+        rdfs:domain :Amount ;
+        rdfs:range qudt:QuantityValue ;
+        rdfs:comment "links instances of Amount to a value" ;
+        rdfs:label "volume" .
+
+
+###  https://w3id.org/adso/ontology/weather_attribute
+:weather_attribute rdf:type owl:ObjectProperty ;
+                   rdfs:domain :WeatherCondition ;
+                   rdfs:comment "links the weather condition to individual factors" ;
+                   rdfs:label "weather_attribute" .
+
+
+###  https://w3id.org/adso/ontology/weather_conditions
+:weather_conditions rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Task ;
+                    rdfs:range :WeatherCondition ;
+                    rdfs:comment "associates a task with a weather condition" ;
+                    rdfs:label "weather_conditions" .
+
+
+###  https://w3id.org/adso/ontology/yeast
+:yeast rdf:type owl:ObjectProperty ;
+       rdfs:domain :Fermentation ;
+       rdfs:comment "specifies the type of yeast used in the fermentation" ;
+       rdfs:label "yeast" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/adso/ontology/is_organic
+:is_organic rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :AgaveDasylirionSpirit ;
+            rdfs:range xsd:boolean ;
+            rdfs:comment "specifies if a spirit is organic" ;
+            rdfs:label "is_organic" .
+
+
+###  https://w3id.org/adso/ontology/nom
+:nom rdf:type owl:DatatypeProperty ,
+              owl:FunctionalProperty ;
+     rdfs:domain :Distillery ;
+     rdfs:range xsd:nonNegativeInteger ;
+     rdfs:comment "associates a distillery with it's designated NOM number" ;
+     rdfs:label "nom" .
+
+
+###  https://w3id.org/adso/ontology/notes
+:notes rdf:type owl:DatatypeProperty ;
+       rdfs:domain :TastingNotes ;
+       rdfs:range xsd:string ;
+       rdfs:comment "links TastingNotes to text" ;
+       rdfs:label "notes" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/adso/ontology/AddingDistillateAdditive
+:AddingDistillateAdditive rdf:type owl:Class ;
+                          rdfs:subClassOf :Task ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                                            owl:someValuesFrom :DistillateWithAdditives
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                            owl:someValuesFrom :Additive
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                            owl:someValuesFrom :DistillateProduct
+                                          ] ;
+                          rdfs:comment "Additives added to distillate for further distillation" ;
+                          rdfs:label "AddingDistillateAdditive" .
+
+
+###  https://w3id.org/adso/ontology/Additive
+:Additive rdf:type owl:Class ;
+          rdfs:subClassOf :TaskProduct ;
+          rdfs:comment "Additive added to a distillate before or after the last distillation" ;
+          rdfs:label "Additive" .
+
+
+###  https://w3id.org/adso/ontology/Agave
+:Agave rdf:type owl:Class ;
+       rdfs:subClassOf :PlantVariety ;
+       rdfs:comment "Agave variety" ;
+       rdfs:label "Agave" .
+
+
+###  https://w3id.org/adso/ontology/AgaveDasylirionSpirit
+:AgaveDasylirionSpirit rdf:type owl:Class ;
+                       rdfs:comment "A spirit made from cooked agave or dasylirion" ;
+                       rdfs:label "AgaveDasylirionSpirit" .
+
+
+###  https://w3id.org/adso/ontology/AgaveSpirit
+:AgaveSpirit rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :AgaveDasylirionSpirit
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :process ;
+                                                          owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :task ;
+                                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty :plant_variety ;
+                                                                                                                         owl:someValuesFrom :Agave
+                                                                                                                       ]
+                                                                                                  ]
+                                                                             ]
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:comment "A spirit made from cooked agave." ;
+             rdfs:label "AgaveSpirit" .
+
+
+###  https://w3id.org/adso/ontology/AgedDistillate
+:AgedDistillate rdf:type owl:Class ;
+                rdfs:subClassOf :DistillateProduct ;
+                rdfs:comment "aged distillate" ;
+                rdfs:label "AgedDistillate" .
+
+
+###  https://w3id.org/adso/ontology/Ageing
+:Ageing rdf:type owl:Class ;
+        rdfs:subClassOf :Task ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                          owl:someValuesFrom :AgedDistillate
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                          owl:someValuesFrom :DistillateProduct
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :tool ;
+                          owl:someValuesFrom :AgeingContainer
+                        ] ;
+        rdfs:comment "Ageing of a distillate" .
+
+
+###  https://w3id.org/adso/ontology/AgeingContainer
+:AgeingContainer rdf:type owl:Class ;
+                 rdfs:subClassOf :Tool ;
+                 rdfs:comment "Container for aging a distillate." ;
+                 rdfs:label "AgeingContainer" .
+
+
+###  https://w3id.org/adso/ontology/Aldehydes
+:Aldehydes rdf:type owl:Class ;
+           rdfs:subClassOf :Compound ;
+           rdfs:label "Aldehydes" .
+
+
+###  https://w3id.org/adso/ontology/Amount
+:Amount rdf:type owl:Class ;
+        rdfs:comment "An amount of a partial distillate." ;
+        rdfs:label "Amount" .
+
+
+###  https://w3id.org/adso/ontology/Aroma
+:Aroma rdf:type owl:Class ;
+       rdfs:subClassOf :SensoryCharacteristic ;
+       owl:disjointWith :TactileCharacteristic ,
+                        :VisualCharacteristic ;
+       rdfs:comment "An aroma described in tasting notes." ;
+       rdfs:label "Aroma" .
+
+
+###  https://w3id.org/adso/ontology/Autoclave
+:Autoclave rdf:type owl:Class ;
+           rdfs:subClassOf :Oven ;
+           rdfs:comment "autoclave" ;
+           rdfs:label "Autoclave" .
+
+
+###  https://w3id.org/adso/ontology/Bagasse
+:Bagasse rdf:type owl:Class ;
+         rdfs:subClassOf :TaskProduct ,
+                         [ rdf:type owl:Class ;
+                           owl:unionOf ( :CrushedPlantProduct
+                                         :FermentationProduct
+                                       )
+                         ] ;
+         rdfs:comment "bagasse" ;
+         rdfs:label "Bagasse" .
+
+
+###  https://w3id.org/adso/ontology/BlendedDistillate
+:BlendedDistillate rdf:type owl:Class ;
+                   rdfs:subClassOf :DistillateProduct ;
+                   rdfs:comment "blended distillate" ;
+                   rdfs:label "BlendedDistillate" .
+
+
+###  https://w3id.org/adso/ontology/Blending
+:Blending rdf:type owl:Class ;
+          rdfs:subClassOf :Task ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                            owl:someValuesFrom :BlendedDistillate
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                            owl:someValuesFrom :PartialDistillate
+                          ] ;
+          rdfs:comment "blending of different distillates, can also be used to specify colas/puntas share" ;
+          rdfs:label "Blending" .
+
+
+###  https://w3id.org/adso/ontology/Bottle
+:Bottle rdf:type owl:Class ;
+        rdfs:comment "A bottle for spirit distribution." ;
+        rdfs:label "Bottle" .
+
+
+###  https://w3id.org/adso/ontology/BottledSpirit
+:BottledSpirit rdf:type owl:Class ;
+               rdfs:subClassOf :TaskProduct ;
+               rdfs:comment "bottled spirit" ;
+               rdfs:label "BottledSpirit" .
+
+
+###  https://w3id.org/adso/ontology/Bottling
+:Bottling rdf:type owl:Class ;
+          rdfs:subClassOf :Task ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                            owl:someValuesFrom :BottledSpirit
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                            owl:someValuesFrom :DistillateProduct
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :bottle ;
+                            owl:someValuesFrom :Bottle
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :tool ;
+                            owl:someValuesFrom :BottlingTool
+                          ] ;
+          rdfs:comment "bottling a distillate for distribution" ;
+          rdfs:label "Bottling" .
+
+
+###  https://w3id.org/adso/ontology/BottlingTool
+:BottlingTool rdf:type owl:Class ;
+              rdfs:subClassOf :Tool ;
+              rdfs:comment "Tool or machine used for bottling. Bottling may also be a manual task." ;
+              rdfs:label "BottlingTool" .
+
+
+###  https://w3id.org/adso/ontology/Brand
+:Brand rdf:type owl:Class ;
+       rdfs:comment "A brand of a spirit." ;
+       rdfs:label "Brand" .
+
+
+###  https://w3id.org/adso/ontology/BrickOven
+:BrickOven rdf:type owl:Class ;
+           rdfs:subClassOf :Oven ;
+           rdfs:comment "brick oven" ;
+           rdfs:label "BrickOven" .
+
+
+###  https://w3id.org/adso/ontology/ChileanMill
+:ChileanMill rdf:type owl:Class ;
+             rdfs:subClassOf :Mill ;
+             rdfs:comment "Chilean mill" ;
+             rdfs:label "ChileanMill" .
+
+
+###  https://w3id.org/adso/ontology/Clay
+:Clay rdf:type owl:Class ;
+      rdfs:subClassOf :Material ;
+      rdfs:comment "Clay material." ;
+      rdfs:label "Clay" .
+
+
+###  https://w3id.org/adso/ontology/ClayOven
+:ClayOven rdf:type owl:Class ;
+          rdfs:subClassOf :Oven ;
+          rdfs:comment "clay oven" ;
+          rdfs:label "ClayOven" .
+
+
+###  https://w3id.org/adso/ontology/ClayStill
+:ClayStill rdf:type owl:Class ;
+           rdfs:subClassOf :Distiller ;
+           rdfs:comment "clay till" ;
+           rdfs:label "ClayStill" .
+
+
+###  https://w3id.org/adso/ontology/ClayVat
+:ClayVat rdf:type owl:Class ;
+         rdfs:subClassOf :FermentationVat ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :material ;
+                           owl:someValuesFrom :Clay
+                         ] ;
+         rdfs:comment "clay fermentation vat" ;
+         rdfs:label "ClayVat" .
+
+
+###  https://w3id.org/adso/ontology/ColumnStill
+:ColumnStill rdf:type owl:Class ;
+             rdfs:subClassOf :Distiller ;
+             rdfs:comment "column still" ;
+             rdfs:label "ColumnStill" .
+
+
+###  https://w3id.org/adso/ontology/Company
+:Company rdf:type owl:Class ;
+         rdfs:comment "A company producing a spirit." ;
+         rdfs:label "Company" .
+
+
+###  https://w3id.org/adso/ontology/Compound
+:Compound rdf:type owl:Class ;
+          rdfs:comment "Compounds found it a spirit." ;
+          rdfs:label "Compound" .
+
+
+###  https://w3id.org/adso/ontology/CookedPlants
+:CookedPlants rdf:type owl:Class ;
+              rdfs:subClassOf :TaskProduct ;
+              owl:disjointWith :Plant ;
+              rdfs:comment "CookedPlants" .
+
+
+###  https://w3id.org/adso/ontology/Cooking
+:Cooking rdf:type owl:Class ;
+         rdfs:subClassOf :Task ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                           owl:someValuesFrom :CookedPlants
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                owl:unionOf ( :PlantHeart
+                                                              :PlantHeartCollection
+                                                            )
+                                              ]
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :tool ;
+                           owl:someValuesFrom :Oven
+                         ] ;
+         rdfs:comment "cooking plant hearts" ;
+         rdfs:label "Cooking" .
+
+
+###  https://w3id.org/adso/ontology/CopperStill
+:CopperStill rdf:type owl:Class ;
+             rdfs:subClassOf :Distiller ;
+             rdfs:comment "copper still" ;
+             rdfs:label "CopperStill" .
+
+
+###  https://w3id.org/adso/ontology/CrushedPlantProduct
+:CrushedPlantProduct rdf:type owl:Class ;
+                     rdfs:subClassOf :TaskProduct ;
+                     rdfs:comment "Product of the crushing task" ;
+                     rdfs:label "CrushedPlantProduct" .
+
+
+###  https://w3id.org/adso/ontology/Crushing
+:Crushing rdf:type owl:Class ;
+          rdfs:subClassOf :Task ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                            owl:someValuesFrom :CrushedPlantProduct
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                            owl:someValuesFrom :CookedPlants
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :tool ;
+                            owl:someValuesFrom :CrushingTool
+                          ] ;
+          rdfs:comment "crushing cooked plant material" ;
+          rdfs:label "Crushing" .
+
+
+###  https://w3id.org/adso/ontology/CrushingTool
+:CrushingTool rdf:type owl:Class ;
+              rdfs:subClassOf :Tool ;
+              rdfs:comment "Tool for crushing the cooked plant." ;
+              rdfs:label "CrushingTool" .
+
+
+###  https://w3id.org/adso/ontology/CultivatedYeast
+:CultivatedYeast rdf:type owl:Class ;
+                 rdfs:subClassOf :Yeast ;
+                 rdfs:comment "cultivated yeast" ;
+                 rdfs:label "CultivatedYeast" .
+
+
+###  https://w3id.org/adso/ontology/CutPlantHeart
+:CutPlantHeart rdf:type owl:Class ;
+               rdfs:subClassOf :TaskProduct ;
+               owl:disjointWith :CutPlantHeartCollection ;
+               rdfs:comment "cut plants before cooking" ;
+               rdfs:label "CutPlantHeart" .
+
+
+###  https://w3id.org/adso/ontology/CutPlantHeartCollection
+:CutPlantHeartCollection rdf:type owl:Class ;
+                         rdfs:subClassOf :TaskProduct ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty [ owl:inverseOf :part_of
+                                                          ] ;
+                                           owl:someValuesFrom :CutPlantHeart
+                                         ] ;
+                         rdfs:comment "a collection of plant hearts" ;
+                         rdfs:label "CutPlantHeartCollection" .
+
+
+###  https://w3id.org/adso/ontology/Cutting
+:Cutting rdf:type owl:Class ;
+         rdfs:subClassOf :Task ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                           owl:someValuesFrom [ rdf:type owl:Class ;
+                                                owl:unionOf ( :CutPlantHeart
+                                                              :CutPlantHeartCollection
+                                                            )
+                                              ]
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :tool ;
+                           owl:someValuesFrom :CuttingTool
+                         ] ;
+         rdfs:comment "cutting a harvested plant into pieces for cooking" ;
+         rdfs:label "Cutting" .
+
+
+###  https://w3id.org/adso/ontology/CuttingTool
+:CuttingTool rdf:type owl:Class ;
+             rdfs:subClassOf :Tool ;
+             rdfs:comment "Tool for cutting plant hearts before cooking" ;
+             rdfs:label "CuttingTool" .
+
+
+###  https://w3id.org/adso/ontology/Dasylirion
+:Dasylirion rdf:type owl:Class ;
+            rdfs:subClassOf :PlantVariety ;
+            rdfs:comment "Dasylirion variety." ;
+            rdfs:label "Dasylirion" .
+
+
+###  https://w3id.org/adso/ontology/DasylirionSpirit
+:DasylirionSpirit rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :AgaveDasylirionSpirit
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :process ;
+                                                               owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty :task ;
+                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                                                                                         owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty :plant_variety ;
+                                                                                                                              owl:someValuesFrom :Dasylirion
+                                                                                                                            ]
+                                                                                                       ]
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:comment "a spirit made from cooked Dasylirion." ;
+                  rdfs:label "DasylirionSpirit" .
+
+
+###  https://w3id.org/adso/ontology/Diffuser
+:Diffuser rdf:type owl:Class ;
+          rdfs:subClassOf :Oven ;
+          rdfs:comment "diffuser" ;
+          rdfs:label "Diffuser" .
+
+
+###  https://w3id.org/adso/ontology/DilutedDistillate
+:DilutedDistillate rdf:type owl:Class ;
+                   rdfs:subClassOf :DistillateProduct ;
+                   rdfs:comment "diluted distillate" ;
+                   rdfs:label "DilutedDistillate" .
+
+
+###  https://w3id.org/adso/ontology/Diluting
+:Diluting rdf:type owl:Class ;
+          rdfs:subClassOf :Task ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                            owl:someValuesFrom :DilutedDistillate
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                            owl:someValuesFrom :DistillateProduct
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                            owl:someValuesFrom :Water
+                          ] ;
+          rdfs:comment "adding water to bring down ABV to desired level" ;
+          rdfs:label "Diluting" .
+
+
+###  https://w3id.org/adso/ontology/DistillateProduct
+:DistillateProduct rdf:type owl:Class ;
+                   rdfs:subClassOf :TaskProduct ;
+                   rdfs:comment "distillate product" ;
+                   rdfs:label "DistillateProduct" .
+
+
+###  https://w3id.org/adso/ontology/DistillateWithAdditives
+:DistillateWithAdditives rdf:type owl:Class ;
+                         rdfs:subClassOf :DistillateProduct ;
+                         rdfs:comment "a distillate with additives for further distillation, e.g. for making pechuga" ;
+                         rdfs:label "DistillateWithAdditives" .
+
+
+###  https://w3id.org/adso/ontology/Distillation
+:Distillation rdf:type owl:Class ;
+              rdfs:subClassOf :Task ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                                owl:someValuesFrom :PureDistillate
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                owl:someValuesFrom [ rdf:type owl:Class ;
+                                                     owl:unionOf ( :DistillateProduct
+                                                                   :FermentationProduct
+                                                                 )
+                                                   ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :tool ;
+                                owl:someValuesFrom :Distiller
+                              ] ;
+              rdfs:comment "distillation task" ;
+              rdfs:label "Distillation" .
+
+
+###  https://w3id.org/adso/ontology/Distiller
+:Distiller rdf:type owl:Class ;
+           rdfs:subClassOf :Tool ;
+           rdfs:comment "Distillation device" ;
+           rdfs:label "Distiller" .
+
+
+###  https://w3id.org/adso/ontology/Distillery
+:Distillery rdf:type owl:Class ;
+            rdfs:comment "A distillery." ;
+            rdfs:label "Distillery" .
+
+
+###  https://w3id.org/adso/ontology/DryExtract
+:DryExtract rdf:type owl:Class ;
+            rdfs:subClassOf :Compound ;
+            rdfs:label "DryExtract" .
+
+
+###  https://w3id.org/adso/ontology/EgyptianMill
+:EgyptianMill rdf:type owl:Class ;
+              rdfs:subClassOf :Mill ;
+              rdfs:comment "Egyptian mill" ;
+              rdfs:label "EgyptianMill" .
+
+
+###  https://w3id.org/adso/ontology/Esters
+:Esters rdf:type owl:Class ;
+        rdfs:subClassOf :Compound ;
+        rdfs:label "Esters" .
+
+
+###  https://w3id.org/adso/ontology/Fermentation
+:Fermentation rdf:type owl:Class ;
+              rdfs:subClassOf :Task ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                                owl:someValuesFrom :FermentationProduct
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                owl:someValuesFrom [ rdf:type owl:Class ;
+                                                     owl:unionOf ( :Juice
+                                                                   [ owl:intersectionOf ( :Bagasse
+                                                                                          :Juice
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ]
+                                                                 )
+                                                   ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :tool ;
+                                owl:someValuesFrom :FermentationVat
+                              ] ;
+              rdfs:comment "fermentation" ;
+              rdfs:label "Fermentation" .
+
+
+###  https://w3id.org/adso/ontology/FermentationProduct
+:FermentationProduct rdf:type owl:Class ;
+                     rdfs:subClassOf :TaskProduct ;
+                     rdfs:comment "fermented cooked plant" ;
+                     rdfs:label "FermentationProduct" .
+
+
+###  https://w3id.org/adso/ontology/FermentationVat
+:FermentationVat rdf:type owl:Class ;
+                 rdfs:subClassOf :Tool ;
+                 rdfs:comment "fermentation vat" ;
+                 rdfs:label "FermentationVat" .
+
+
+###  https://w3id.org/adso/ontology/FermentedJuice
+:FermentedJuice rdf:type owl:Class ;
+                rdfs:subClassOf :FermentationProduct ;
+                rdfs:comment "fermented juice, maybe result of fermentation of the juice only, or isolated through filtering" ;
+                rdfs:label "FermentedJuice" .
+
+
+###  https://w3id.org/adso/ontology/FilterTool
+:FilterTool rdf:type owl:Class ;
+            rdfs:subClassOf :Tool ;
+            rdfs:comment "tool for filtering crushed plantmaterial, a distillate or fermentation product" ;
+            rdfs:label "FilterTool" .
+
+
+###  https://w3id.org/adso/ontology/FilteredDistillate
+:FilteredDistillate rdf:type owl:Class ;
+                    rdfs:subClassOf :DistillateProduct ;
+                    rdfs:comment "filtered distillate" ;
+                    rdfs:label "FilteredDistillate" .
+
+
+###  https://w3id.org/adso/ontology/Filtering
+:Filtering rdf:type owl:Class ;
+           rdfs:subClassOf :Task ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                             owl:someValuesFrom [ rdf:type owl:Class ;
+                                                  owl:unionOf ( :CrushedPlantProduct
+                                                                :DistillateProduct
+                                                                :FermentationProduct
+                                                              )
+                                                ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :tool ;
+                             owl:someValuesFrom :FilterTool
+                           ] ;
+           rdfs:comment "filtering task" ;
+           rdfs:label "Filtering" .
+
+
+###  https://w3id.org/adso/ontology/FirstDistillation
+:FirstDistillation rdf:type owl:Class ;
+                   rdfs:subClassOf :Distillation ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                     owl:someValuesFrom :FermentationProduct
+                                   ] ;
+                   rdfs:comment "first distillation" ;
+                   rdfs:label "FirstDistillation" .
+
+
+###  https://w3id.org/adso/ontology/FlavoredDistillate
+:FlavoredDistillate rdf:type owl:Class ;
+                    rdfs:subClassOf :DistillateProduct ;
+                    rdfs:comment "flavored distillate" ;
+                    rdfs:label "FlavoredDistillate" .
+
+
+###  https://w3id.org/adso/ontology/Flavoring
+:Flavoring rdf:type owl:Class ;
+           rdfs:subClassOf :Task ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                             owl:someValuesFrom :FlavoredDistillate
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                             owl:someValuesFrom :Additive
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                             owl:someValuesFrom :DistillateProduct
+                           ] ;
+           rdfs:comment "flavoring of a distillate after last distillation" ;
+           rdfs:label "Flavoring" .
+
+
+###  https://w3id.org/adso/ontology/FurtherDistillation
+:FurtherDistillation rdf:type owl:Class ;
+                     rdfs:subClassOf :Distillation ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                       owl:someValuesFrom :DistillateProduct
+                                     ] ;
+                     rdfs:comment "second, third (or further) distillation" ;
+                     rdfs:label "FurtherDistillation" .
+
+
+###  https://w3id.org/adso/ontology/Glass
+:Glass rdf:type owl:Class ;
+       rdfs:subClassOf :Material ;
+       rdfs:comment "Glass material" ;
+       rdfs:label "Glass" .
+
+
+###  https://w3id.org/adso/ontology/GlassBottle
+:GlassBottle rdf:type owl:Class ;
+             rdfs:subClassOf :Bottle ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :material ;
+                               owl:someValuesFrom :Glass
+                             ] ;
+             rdfs:comment "A glass bottle for spirit distribution." ;
+             rdfs:label "GlassBottle" .
+
+
+###  https://w3id.org/adso/ontology/GlassContainer
+:GlassContainer rdf:type owl:Class ;
+                rdfs:subClassOf :AgeingContainer ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :material ;
+                                  owl:someValuesFrom :Glass
+                                ] ;
+                rdfs:comment "Glass container for aging a distillate." ;
+                rdfs:label "GlassContainer" .
+
+
+###  https://w3id.org/adso/ontology/Harvesting
+:Harvesting rdf:type owl:Class ;
+            rdfs:subClassOf :Task ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                              owl:someValuesFrom :Leaves
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.w3.org/ns/prov#generated> ;
+                              owl:someValuesFrom [ rdf:type owl:Class ;
+                                                   owl:unionOf ( :PlantHeart
+                                                                 :PlantHeartCollection
+                                                               )
+                                                 ]
+                            ] ;
+            rdfs:comment "harvesting plants and obtaining plant heart" ;
+            rdfs:label "Harvesting" .
+
+
+###  https://w3id.org/adso/ontology/Hide
+:Hide rdf:type owl:Class ;
+      rdfs:subClassOf :Material ;
+      rdfs:comment "Hide material." ;
+      rdfs:label "HideMaterial" .
+
+
+###  https://w3id.org/adso/ontology/HideVat
+:HideVat rdf:type owl:Class ;
+         rdfs:subClassOf :FermentationVat ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :material ;
+                           owl:someValuesFrom :Hide
+                         ] ;
+         rdfs:comment "hide fermentation vat" ;
+         rdfs:label "HideVat" .
+
+
+###  https://w3id.org/adso/ontology/HigherAlcohols
+:HigherAlcohols rdf:type owl:Class ;
+                rdfs:subClassOf :Compound ;
+                rdfs:label "HigherAlcohols" .
+
+
+###  https://w3id.org/adso/ontology/Juice
+:Juice rdf:type owl:Class ;
+       rdfs:subClassOf :CrushedPlantProduct ;
+       rdfs:comment "Juice produced during crushing, can be isolated by filtering" ;
+       rdfs:label "Juice" .
+
+
+###  https://w3id.org/adso/ontology/Label
+:Label rdf:type owl:Class ;
+       rdfs:comment "A label on a distributed bottle." ;
+       rdfs:label "Label" .
+
+
+###  https://w3id.org/adso/ontology/Leaves
+:Leaves rdf:type owl:Class ;
+        rdfs:subClassOf :TaskProduct ;
+        rdfs:comment "the plant's leaves are removed to get the agave heart for further processing" ;
+        rdfs:label "Leaves" .
+
+
+###  https://w3id.org/adso/ontology/LiquidAdditive
+:LiquidAdditive rdf:type owl:Class ;
+                rdfs:subClassOf :Additive ;
+                rdfs:comment "Liquid additive added to a distillate before or after the last distillation" ;
+                rdfs:label "LiquidAdditive" .
+
+
+###  https://w3id.org/adso/ontology/Location
+:Location rdf:type owl:Class ;
+          rdfs:comment "The location a task has been performed." ;
+          rdfs:label "weather_conditions" .
+
+
+###  https://w3id.org/adso/ontology/Mallet
+:Mallet rdf:type owl:Class ;
+        rdfs:subClassOf :CrushingTool ;
+        rdfs:comment "Mallet" ;
+        rdfs:label "Mallet" .
+
+
+###  https://w3id.org/adso/ontology/Material
+:Material rdf:type owl:Class ;
+          rdfs:comment "The material a tool is primarily made from." ;
+          rdfs:label "Material" .
+
+
+###  https://w3id.org/adso/ontology/Mill
+:Mill rdf:type owl:Class ;
+      rdfs:subClassOf :CrushingTool ;
+      rdfs:comment "Mill" ;
+      rdfs:label "Mill" .
+
+
+###  https://w3id.org/adso/ontology/MillSeries
+:MillSeries rdf:type owl:Class ;
+            rdfs:subClassOf :Mill ;
+            rdfs:comment "Mill series" ;
+            rdfs:label "MillSeries" .
+
+
+###  https://w3id.org/adso/ontology/Oven
+:Oven rdf:type owl:Class ;
+      rdfs:subClassOf :Tool ;
+      rdfs:comment "oven" ;
+      rdfs:label "Oven" .
+
+
+###  https://w3id.org/adso/ontology/OvenPreparation
+:OvenPreparation rdf:type owl:Class ;
+                 rdfs:subClassOf :Task ;
+                 rdfs:comment "Oven preparation. For example, plants are covered with several materials in pit ovens before cooking." ;
+                 rdfs:label "OvenPreparation" .
+
+
+###  https://w3id.org/adso/ontology/PartialDistillate
+:PartialDistillate rdf:type owl:Class ;
+                   rdfs:subClassOf :DistillateProduct ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :part_of ;
+                                     owl:someValuesFrom :PureDistillate
+                                   ] ;
+                   rdfs:comment "partial distillate" ;
+                   rdfs:label "PartialDistillate" .
+
+
+###  https://w3id.org/adso/ontology/PitOven
+:PitOven rdf:type owl:Class ;
+         rdfs:subClassOf :Oven ;
+         rdfs:comment "pit oven" ;
+         rdfs:label "PitOven" .
+
+
+###  https://w3id.org/adso/ontology/Plant
+:Plant rdf:type owl:Class ;
+       rdfs:subClassOf :TaskProduct ;
+       owl:disjointWith :PlantCollection ;
+       rdfs:comment "plant that is harvested" ;
+       rdfs:label "Plant" .
+
+
+###  https://w3id.org/adso/ontology/PlantCollection
+:PlantCollection rdf:type owl:Class ;
+                 rdfs:subClassOf :TaskProduct ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty [ owl:inverseOf :part_of
+                                                  ] ;
+                                   owl:someValuesFrom :Plant
+                                 ] ;
+                 rdfs:comment "a collection of plants that are harvested" ;
+                 rdfs:label "PlantCollection" .
+
+
+###  https://w3id.org/adso/ontology/PlantHeart
+:PlantHeart rdf:type owl:Class ;
+            rdfs:subClassOf :TaskProduct ;
+            owl:disjointWith :PlantHeartCollection ;
+            rdfs:comment "harvested plant heart" ;
+            rdfs:label "PlantHeart" .
+
+
+###  https://w3id.org/adso/ontology/PlantHeartCollection
+:PlantHeartCollection rdf:type owl:Class ;
+                      rdfs:subClassOf :TaskProduct ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty [ owl:inverseOf :part_of
+                                                       ] ;
+                                        owl:someValuesFrom :PlantHeart
+                                      ] ;
+                      rdfs:comment "collection of plant hearts" ;
+                      rdfs:label "PlantHeartCollection" .
+
+
+###  https://w3id.org/adso/ontology/PlantVariety
+:PlantVariety rdf:type owl:Class ;
+              rdfs:comment "Plant variety." ;
+              rdfs:label "PlantVariety" .
+
+
+###  https://w3id.org/adso/ontology/Porcelain
+:Porcelain rdf:type owl:Class ;
+           rdfs:subClassOf :Material ;
+           rdfs:comment "Porcelain material." ;
+           rdfs:label "Porcelain" .
+
+
+###  https://w3id.org/adso/ontology/PorcelainBottle
+:PorcelainBottle rdf:type owl:Class ;
+                 rdfs:subClassOf :Bottle ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :material ;
+                                   owl:someValuesFrom :Porcelain
+                                 ] ;
+                 rdfs:comment "A porcelain for spirit distribution." ;
+                 rdfs:label "PorcelainBottle" .
+
+
+###  https://w3id.org/adso/ontology/Press
+:Press rdf:type owl:Class ;
+       rdfs:subClassOf :CrushingTool ;
+       rdfs:comment "Press" ;
+       rdfs:label "Press" .
+
+
+###  https://w3id.org/adso/ontology/Process
+:Process rdf:type owl:Class ;
+         rdfs:comment "The process of producing a spirit." ;
+         rdfs:label "Process" .
+
+
+###  https://w3id.org/adso/ontology/PureDistillate
+:PureDistillate rdf:type owl:Class ;
+                rdfs:subClassOf :DistillateProduct ;
+                rdfs:comment "direct product of distilling" ;
+                rdfs:label "PureDistillate" .
+
+
+###  https://w3id.org/adso/ontology/SensoryCharacteristic
+:SensoryCharacteristic rdf:type owl:Class ;
+                       rdfs:comment "sensory characteristics of a spirit" ;
+                       rdfs:label "SensoryCharacteristic" .
+
+
+###  https://w3id.org/adso/ontology/Shredder
+:Shredder rdf:type owl:Class ;
+          rdfs:subClassOf :CrushingTool ;
+          rdfs:comment "Shredder" ;
+          rdfs:label "Shredder" .
+
+
+###  https://w3id.org/adso/ontology/Specification
+:Specification rdf:type owl:Class ;
+               rdfs:comment "Specification of compunds found in a spirit." ;
+               rdfs:label "Specification" .
+
+
+###  https://w3id.org/adso/ontology/StainlessSteel
+:StainlessSteel rdf:type owl:Class ;
+                rdfs:subClassOf :Material ;
+                rdfs:comment "Stainless steel material." ;
+                rdfs:label "StainlessSteel" .
+
+
+###  https://w3id.org/adso/ontology/StainlessSteelContainer
+:StainlessSteelContainer rdf:type owl:Class ;
+                         rdfs:subClassOf :AgeingContainer ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :material ;
+                                           owl:someValuesFrom :StainlessSteel
+                                         ] ;
+                         rdfs:comment "Stainless steel container for aging a distillate." ;
+                         rdfs:label "StainlessSteelContainer" .
+
+
+###  https://w3id.org/adso/ontology/StainlessSteelStill
+:StainlessSteelStill rdf:type owl:Class ;
+                     rdfs:subClassOf :Distiller ;
+                     rdfs:comment "stainless steel still" ;
+                     rdfs:label "StainlessSteelStill" .
+
+
+###  https://w3id.org/adso/ontology/StainlessSteelVat
+:StainlessSteelVat rdf:type owl:Class ;
+                   rdfs:subClassOf :FermentationVat ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :material ;
+                                     owl:someValuesFrom :StainlessSteel
+                                   ] ;
+                   rdfs:comment "stainless steel fermentation vat" ;
+                   rdfs:label "StainlessSteelVat" .
+
+
+###  https://w3id.org/adso/ontology/StoneOven
+:StoneOven rdf:type owl:Class ;
+           rdfs:subClassOf :Oven ;
+           rdfs:comment "stone oven" ;
+           rdfs:label "StoneOven" .
+
+
+###  https://w3id.org/adso/ontology/TactileCharacteristic
+:TactileCharacteristic rdf:type owl:Class ;
+                       rdfs:subClassOf :SensoryCharacteristic ;
+                       owl:disjointWith :VisualCharacteristic ;
+                       rdfs:comment "tactile characteristic of a spirit" ;
+                       rdfs:label "TactileCharacteristic" .
+
+
+###  https://w3id.org/adso/ontology/Tahona
+:Tahona rdf:type owl:Class ;
+        rdfs:subClassOf :CrushingTool ;
+        rdfs:comment "Tahona" ;
+        rdfs:label "Tahona" .
+
+
+###  https://w3id.org/adso/ontology/Task
+:Task rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+      rdfs:comment "An individual task of the spirit production process" ;
+      rdfs:label "Task" .
+
+
+###  https://w3id.org/adso/ontology/TaskProduct
+:TaskProduct rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+             rdfs:comment "a product used or generated by a task" ;
+             rdfs:label "TaskProduct" .
+
+
+###  https://w3id.org/adso/ontology/TastingNotes
+:TastingNotes rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing ;
+              rdfs:comment "tasting notes" ;
+              rdfs:label "TastingNotes" .
+
+
+###  https://w3id.org/adso/ontology/Tool
+:Tool rdf:type owl:Class ;
+      rdfs:comment "A tool used in spirit production." ;
+      rdfs:label "Tool" .
+
+
+###  https://w3id.org/adso/ontology/Trapiche
+:Trapiche rdf:type owl:Class ;
+          rdfs:subClassOf :CrushingTool ;
+          rdfs:comment "Trapiche" ;
+          rdfs:label "Trapiche" .
+
+
+###  https://w3id.org/adso/ontology/VisualCharacteristic
+:VisualCharacteristic rdf:type owl:Class ;
+                      rdfs:subClassOf :SensoryCharacteristic ;
+                      rdfs:comment "visual characteristic of a spirit" .
+
+
+###  https://w3id.org/adso/ontology/Water
+:Water rdf:type owl:Class ;
+       rdfs:subClassOf :TaskProduct ;
+       rdfs:comment "water ay be added to bring down ABV"^^xsd:string ;
+       rdfs:label "Water" .
+
+
+###  https://w3id.org/adso/ontology/WeatherCondition
+:WeatherCondition rdf:type owl:Class ;
+                  rdfs:comment "Weather conditions during a task." ;
+                  rdfs:label "WeatherConditions" .
+
+
+###  https://w3id.org/adso/ontology/WildYeast
+:WildYeast rdf:type owl:Class ;
+           rdfs:subClassOf :Yeast ;
+           rdfs:comment "wild (airborne) yeast" ;
+           rdfs:label "WildYeast" .
+
+
+###  https://w3id.org/adso/ontology/Wood
+:Wood rdf:type owl:Class ;
+      rdfs:subClassOf :Material ;
+      rdfs:comment "Wood material" ;
+      rdfs:label "Wood" .
+
+
+###  https://w3id.org/adso/ontology/WoodenBarrel
+:WoodenBarrel rdf:type owl:Class ;
+              rdfs:subClassOf :AgeingContainer ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :material ;
+                                owl:someValuesFrom :Wood
+                              ] ;
+              rdfs:comment "A wooden barrel for aging a distillate." ;
+              rdfs:label "WoodenBarrel" .
+
+
+###  https://w3id.org/adso/ontology/WoodenVat
+:WoodenVat rdf:type owl:Class ;
+           rdfs:subClassOf :FermentationVat ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :material ;
+                             owl:someValuesFrom :Wood
+                           ] ;
+           rdfs:comment "wooden fermentation vat" ;
+           rdfs:label "WoodenVat" .
+
+
+###  https://w3id.org/adso/ontology/Yeast
+:Yeast rdf:type owl:Class ;
+       rdfs:subClassOf :TaskProduct ;
+       rdfs:comment "Yeast used for fermentation" ;
+       rdfs:label "Yeast" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/adso/ontology/Alcohol
+:Alcohol rdf:type owl:NamedIndividual ,
+                  :Compound ;
+         rdfs:comment "alcohol (ABV)" ;
+         rdfs:label "Alcohol" .
+
+
+###  https://w3id.org/adso/ontology/Arsenic
+:Arsenic rdf:type owl:NamedIndividual ,
+                  :Compound ;
+         rdfs:comment "arsenic" ;
+         rdfs:label "Arsenic" .
+
+
+###  https://w3id.org/adso/ontology/Copper
+:Copper rdf:type owl:NamedIndividual ,
+                 :Compound ;
+        rdfs:comment "copper" ;
+        rdfs:label "Copper" .
+
+
+###  https://w3id.org/adso/ontology/Furfural
+:Furfural rdf:type owl:NamedIndividual ,
+                   :Compound ;
+          rdfs:comment "furfural" ;
+          rdfs:label "Furfural" .
+
+
+###  https://w3id.org/adso/ontology/Lead
+:Lead rdf:type owl:NamedIndividual ,
+               :Compound ;
+      rdfs:comment "lead" ;
+      rdfs:label "Lead" .
+
+
+###  https://w3id.org/adso/ontology/Methanol
+:Methanol rdf:type owl:NamedIndividual ,
+                   :Compound ;
+          rdfs:comment "methanol" ;
+          rdfs:label "Methanol" .
+
+
+###  https://w3id.org/adso/ontology/Zinc
+:Zinc rdf:type owl:NamedIndividual ,
+               :Compound ;
+      rdfs:comment "Zinc" ;
+      rdfs:label "Zinc" .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

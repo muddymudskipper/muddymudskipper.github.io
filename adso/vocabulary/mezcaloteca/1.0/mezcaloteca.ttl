@@ -1,0 +1,407 @@
+@prefix : <https://w3id.org/adso/vocabulary/mezcaloteca/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix adso: <https://w3id.org/adso/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://w3id.org/adso/vocabulary/mezcaloteca/> .
+
+<https://w3id.org/adso/vocabulary/mezcaloteca/> rdf:type owl:Ontology ;
+                                      owl:imports adso: ;
+                                      dc:description "The Mezcaloteca Sensory Characteristics Vocabulary conceptualises the sensory charateristics of traditional mezcal, as identified by Mezcaloteca, Oaxaca" ;
+                                      dc:creator "Thomas Wilmering" ;
+                                      dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
+                                      owl:versionInfo "Revision: 1.0b1" ;
+                                      dc:rights "This ontology is distributed under a Creative Commons License - http://creativecommons.org/licenses/by-sa/4.0/" ;
+                                      dcterms:date "2018-04-08"^^xsd:date ;
+                                      dcterms:title "The Mezcaloteca Sensory Characteristics Vocabulary for the Agave and Dasyirion Spirit Ontology (ADSO)" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/aroma_high
+:aroma_high rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf adso:aroma ;
+            rdfs:range :Aroma ;
+            rdfs:comment "aroma (high intensity)" ;
+            rdfs:label "aroma_high" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/aroma_low
+:aroma_low rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf adso:aroma ;
+           rdfs:range :Aroma ;
+           rdfs:comment "aroma (low intensity)" ;
+           rdfs:label "aroma_low" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/aroma_medium
+:aroma_medium rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf adso:aroma ;
+              rdfs:range :Aroma ;
+              rdfs:comment "aroma (medium intensity)" ;
+              rdfs:label "aroma_medium" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/tactile_high
+:tactile_high rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf adso:tactile ;
+              rdfs:range :TactileCharacteristic ;
+              rdfs:comment "tactile characteristic (high intensity)" ;
+              rdfs:label "tactile_high" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/tactile_low
+:tactile_low rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf adso:tactile ;
+             rdfs:range :TactileCharacteristic ;
+             rdfs:comment "tactile characteristic (low intensity)" ;
+             rdfs:label "tactile_low" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/tactile_medium
+:tactile_medium rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf adso:tactile ;
+                rdfs:range :TactileCharacteristic ;
+                rdfs:comment "tactile characteristic (medium intensity)" ;
+                rdfs:label "tactile_medium" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/visual_high
+:visual_high rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf adso:visual ;
+             rdfs:range :VisualCharacteristic ;
+             rdfs:comment "visual characteristic (high intensity)" ;
+             rdfs:label "visual_high" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/visual_low
+:visual_low rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf adso:visual ;
+            rdfs:range :VisualCharacteristic ;
+            rdfs:comment "visual characteristic (low intensity)" ;
+            rdfs:label "visual_low" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/visual_medium
+:visual_medium rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf adso:visual ;
+               rdfs:range :VisualCharacteristic ;
+               rdfs:comment "visual characteristic (medium intensity)" ;
+               rdfs:label "visual_medium" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Aroma
+:Aroma rdf:type owl:Class ;
+       rdfs:subClassOf adso:Aroma ;
+       rdfs:comment "aroma" ;
+       rdfs:label "Aroma" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/TactileCharacteristic
+:TactileCharacteristic rdf:type owl:Class ;
+                       rdfs:subClassOf adso:TactileCharacteristic ;
+                       rdfs:comment "tactile characteristic of a spirit" ;
+                       rdfs:label "TactileCharacteristic" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/VisualCharacteristic
+:VisualCharacteristic rdf:type owl:Class ;
+                      rdfs:subClassOf adso:VisualCharacteristic ;
+                      rdfs:comment "visual characteristic of a spirit" ;
+                      rdfs:label "VisualCharacteristic" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Acetones
+:Acetones rdf:type owl:NamedIndividual ,
+                   :Aroma ;
+          rdfs:comment "acetones aroma" ;
+          rdfs:label "Acetones" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Acidic
+:Acidic rdf:type owl:NamedIndividual ,
+                 :Aroma ;
+        rdfs:comment "acidic aroma" ;
+        rdfs:label "Acidic" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Alcohol
+:Alcohol rdf:type owl:NamedIndividual ,
+                  :Aroma ;
+         rdfs:comment "alcohol aroma" ;
+         rdfs:label "Alcohol" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Animal
+:Animal rdf:type owl:NamedIndividual ,
+                 :Aroma ;
+        rdfs:comment "animal aroma" ;
+        rdfs:label "Animal" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Aqueous
+:Aqueous rdf:type owl:NamedIndividual ,
+                  :TactileCharacteristic ;
+         rdfs:comment "aqueous tactile characteristic" ;
+         rdfs:label "Aqueous" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Astringent
+:Astringent rdf:type owl:NamedIndividual ,
+                     :Aroma ;
+            rdfs:comment "astringent aroma" ;
+            rdfs:label "Astringent" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Bitter
+:Bitter rdf:type owl:NamedIndividual ,
+                 :Aroma ;
+        rdfs:comment "bitter aroma" ;
+        rdfs:label "Bitter" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Brightness
+:Brightness rdf:type owl:NamedIndividual ,
+                     :VisualCharacteristic ;
+            rdfs:comment "brightness visual characteristic" ;
+            rdfs:label "Brightness" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Chocolate
+:Chocolate rdf:type owl:NamedIndividual ,
+                    :Aroma ;
+           rdfs:comment "chocolate aroma" ;
+           rdfs:label "Chocolate" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Citric
+:Citric rdf:type owl:NamedIndividual ,
+                 :Aroma ;
+        rdfs:comment "citric aroma" ;
+        rdfs:label "Citric" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Clay
+:Clay rdf:type owl:NamedIndividual ,
+               :Aroma ;
+      rdfs:comment "clay aroma" ;
+      rdfs:label "Clay" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Coffee
+:Coffee rdf:type owl:NamedIndividual ,
+                 :Aroma ;
+        rdfs:comment "coffee aroma" ;
+        rdfs:label "Coffee" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/CookedMaguey
+:CookedMaguey rdf:type owl:NamedIndividual ,
+                       :Aroma ;
+              rdfs:comment "cooked maguey aroma" ;
+              rdfs:label "CookedMaguey" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Dairy
+:Dairy rdf:type owl:NamedIndividual ,
+                :Aroma ;
+       rdfs:comment "dairy aroma" ;
+       rdfs:label "Dairy" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Density
+:Density rdf:type owl:NamedIndividual ,
+                  :VisualCharacteristic ;
+         rdfs:comment "density visual characteristic" ;
+         rdfs:label "Density" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/DurationOfPearls
+:DurationOfPearls rdf:type owl:NamedIndividual ,
+                           :VisualCharacteristic ;
+                  rdfs:comment "duration of pearls (bubbles) visual characteristic" ;
+                  rdfs:label "DurationOfPearls" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Earthy
+:Earthy rdf:type owl:NamedIndividual ,
+                 :Aroma ;
+        rdfs:comment "earthy aroma" ;
+        rdfs:label "Earthy" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Ferment
+:Ferment rdf:type owl:NamedIndividual ,
+                  :Aroma ;
+         rdfs:comment "ferment aroma" ;
+         rdfs:label "Ferment" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Floral
+:Floral rdf:type owl:NamedIndividual ,
+                 :Aroma ;
+        rdfs:comment "floral aroma" ;
+        rdfs:label "Floral" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Fruity
+:Fruity rdf:type owl:NamedIndividual ,
+                 :Aroma ;
+        rdfs:comment "fruity aroma" ;
+        rdfs:label "Fruity" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Herbal
+:Herbal rdf:type owl:NamedIndividual ,
+                 :Aroma ;
+        rdfs:comment "herbal aroma" ;
+        rdfs:label "Herbal" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Humidity
+:Humidity rdf:type owl:NamedIndividual ,
+                   :Aroma ;
+          rdfs:comment "humidity aroma" ;
+          rdfs:label "Humidity" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Metal
+:Metal rdf:type owl:NamedIndividual ,
+                :Aroma ;
+       rdfs:comment "metal aroma" ;
+       rdfs:label "Metal" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Mineral
+:Mineral rdf:type owl:NamedIndividual ,
+                  :Aroma ;
+         rdfs:comment "mineral aroma" ;
+         rdfs:label "Mineral" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Oily
+:Oily rdf:type owl:NamedIndividual ,
+               :TactileCharacteristic ;
+      rdfs:comment "tactile aroma" ;
+      rdfs:label "Tactile" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Olives
+:Olives rdf:type owl:NamedIndividual ,
+                 :Aroma ;
+        rdfs:comment "olives aroma" ;
+        rdfs:label "Olives" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/PearlSize
+:PearlSize rdf:type owl:NamedIndividual ,
+                    :VisualCharacteristic ;
+           rdfs:comment "pearl (bubble) size visual characteristic" ;
+           rdfs:label "PearlSize" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Resins
+:Resins rdf:type owl:NamedIndividual ,
+                 :Aroma ;
+        rdfs:comment "resins aroma" ;
+        rdfs:label "Resins" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Roots
+:Roots rdf:type owl:NamedIndividual ,
+                :Aroma ;
+       rdfs:comment "roots aroma" ;
+       rdfs:label "Roots" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Salt
+:Salt rdf:type owl:NamedIndividual ,
+               :Aroma ;
+      rdfs:comment "salt aroma" ;
+      rdfs:label "Salt" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Sediments
+:Sediments rdf:type owl:NamedIndividual ,
+                    :VisualCharacteristic ;
+           rdfs:comment "sediments visual characteristic" ;
+           rdfs:label "Sediments" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Seeds
+:Seeds rdf:type owl:NamedIndividual ,
+                :Aroma ;
+       rdfs:comment "seeds aroma" ;
+       rdfs:label "Seeds" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Smoke
+:Smoke rdf:type owl:NamedIndividual ,
+                :Aroma ;
+       rdfs:comment "smoke aroma" ;
+       rdfs:label "Smoke" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Spice
+:Spice rdf:type owl:NamedIndividual ,
+                :Aroma ;
+       rdfs:comment "spice aroma" ;
+       rdfs:label "Spice" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Spicy
+:Spicy rdf:type owl:NamedIndividual ,
+                :Aroma ;
+       rdfs:comment "spicy aroma" ;
+       rdfs:label "Spicy" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Sweet
+:Sweet rdf:type owl:NamedIndividual ,
+                :Aroma ;
+       rdfs:comment "sweet aroma" ;
+       rdfs:label "Sweet" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Tonality
+:Tonality rdf:type owl:NamedIndividual ,
+                   :VisualCharacteristic ;
+          rdfs:comment "tonality visual characteristic" ;
+          rdfs:label "Tonality" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Transparency
+:Transparency rdf:type owl:NamedIndividual ,
+                       :VisualCharacteristic ;
+              rdfs:comment "transparency visual characteristic" ;
+              rdfs:label "Transparency" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Viscous
+:Viscous rdf:type owl:NamedIndividual ,
+                  :TactileCharacteristic ;
+         rdfs:comment "viscous tactile characteristic" ;
+         rdfs:label "Viscous" .
+
+
+###  https://w3id.org/adso/vocabulary/mezcaloteca/Wood
+:Wood rdf:type owl:NamedIndividual ,
+               :Aroma ;
+      rdfs:comment "wood aroma" ;
+      rdfs:label "Wood" .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
