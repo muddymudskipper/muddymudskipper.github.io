@@ -18,10 +18,10 @@
                                    dc:creator "Thomas Wilmering" ;
                                    dc:description "The Agave and Dasyirion Spirit Ontology (ADSO) provides concepts and properties for the description of distilled beverages based on cooked agave and dasylirion." ;
                                    dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
-                                   owl:versionInfo "Revision: 1.0b1" ;
+                                   owl:versionInfo "Revision: 1.0b2" ;
                                    dc:contributor "G. Fazekas" ;
                                    dc:rights "This ontology is distributed under a Creative Commons License - http://creativecommons.org/licenses/by-sa/4.0/" ;
-                                   dcterms:date "2018-04-08"^^xsd:date .
+                                   dcterms:date "2018-05-12"^^xsd:date .
 
 #################################################################
 #    Object Properties
@@ -52,6 +52,14 @@
            rdfs:range :DistillateProduct ;
            rdfs:comment "associates instances of Amount to a partial distillate" ;
            rdfs:label "amount_of" .
+
+
+###  https://w3id.org/adso/ontology/amount_value
+:amount_value rdf:type owl:ObjectProperty ;
+              owl:equivalentProperty :volume ;
+              rdfs:subPropertyOf qudt:value ;
+              rdfs:comment "links instances of Amount to a value" ;
+              rdfs:label "amount_label" .
 
 
 ###  https://w3id.org/adso/ontology/aroma
@@ -366,7 +374,8 @@
         rdfs:domain :Amount ;
         rdfs:range qudt:QuantityValue ;
         rdfs:comment "links instances of Amount to a value" ;
-        rdfs:label "volume" .
+        rdfs:label "volume" ;
+        owl:deprecated "true"^^xsd:boolean .
 
 
 ###  https://w3id.org/adso/ontology/weather_attribute
