@@ -1,0 +1,1711 @@
+[
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/reply_to_feedback",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Reply"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "reply to feedback"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/considering_acoustics",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "considering acoustics"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/ensemble_communication",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "ensemble communication"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/building_up",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Phrasing",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "building up"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/mental_approach",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Technique",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "mental approach"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/blame_recording_for_reception_issues",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/TechnologyRelated"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "blame recording for reception issues"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/linking",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Phrasing"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "linking"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/general",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Technique",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "general"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/posture",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Technique"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "posture"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/incorrect_use_of_terminology",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "incorrect use of terminology"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/arrangement",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "arrangement"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/being_confident",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "being confident"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/noticing_improvement",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/PraiseSelf"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "noticing improvement"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/first_name_basis",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "first name basis"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/request_advice_on_tempo",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/RequestAdvice"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "request advice on tempo"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/PlanningPracticeActivities",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Planning Practice Activities"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/tuning_before_playing",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "tuning before playing"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/with_or_without_score",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Listening",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "with or without score"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/authenticity",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "authenticity"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/guiding_peer_feedback_process",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "guiding peer feedback process"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/topic",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Comment"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "topic"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/thanking_for_input",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "thanking for input"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/request_advice_on_practising",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/RequestAdvice"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "request advice on practising"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/thinking_piece_as_a_whole",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "thinking piece as a whole"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/increasing_speed_gradually",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Practising"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "increasing speed gradually"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/no_frills",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "no frills"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/gradual_tempo_change",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Tempo"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "gradual tempo change"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/pedalling",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "pedalling"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/intonation",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Technique"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "intonation"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/request_clarification",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Request",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "request clarification"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/express_an_opinion",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "express an opinion"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Phrasing",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Phrasing"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/rhythmic",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Accuracy",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "rhythmic"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/imperative_mood",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "imperative mood"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Listening",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Listening"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/reception_of_piece",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Reception"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "reception of piece"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Accuracy",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Accuracy"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/breathing",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Technique"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "breathing"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/ProvidingFeedforward",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Providing Feedforward"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/RelatedMatters",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Related Matters"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/minimising_issues",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "minimising issues"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/warming_up",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Technique",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "warming up"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/explain_reasons_for_comment",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/CommentType",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "explain reasons for comment"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/diction",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Technique",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "diction"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/TechnologyRelated",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Technology Related"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Listening"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/straining",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Technique",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "straining"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Interaction"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/listening_to_one_another",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Practising",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "listening to one another"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Ontology"
+        ],
+        "http://purl.org/dc/terms/date": [
+            {
+                "@type": "http://www.w3.org/2001/XMLSchema#date",
+                "@value": "2018-11-25"
+            }
+        ],
+        "http://purl.org/dc/terms/license": [
+            {
+                "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "The Music Circle Grounded Ontology"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#imports": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#versionInfo": [
+            {
+                "@value": "1.0"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/StayingInPerformanceMode",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Staying In Performance Mode"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/giving_feedback",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "giving feedback"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Request",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Request"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/counting_out_loud",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Practising"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "counting out loud"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/waveform",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/TechnologyRelated"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "waveform"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/exaggerated_positive_reaction",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "exaggerated positive reaction"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/providing_feedforward_self",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/ProvidingFeedforward"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "providing feedforward self"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Discussion Topic"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/background_noise",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Listening",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "background noise"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/note",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Accuracy",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "note"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/counting",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Accuracy",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "counting"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/advantages_of_recorded_performance",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/TechnologyRelated"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "advantages of recorded performance"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/breaking_down_piece_into_sections",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Practising"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "breaking down piece into sections"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/flexibility",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "flexibility"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/forthcoming_ensemble_recital",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/RelatedMatters"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "forthcoming ensemble recital"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/rehearsing_together",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Practising",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "rehearsing together"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/request_feedforward",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Request",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "request feedforward"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/having_fun_while_playing",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "having fun while playing"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/practising_with_page_turner",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Practising"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "practising with page turner"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/RequestAdvice",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Request Advice"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Request"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/performer_placement",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "performer placement"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/language",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Comment"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "language"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Language"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/comment_on_related_matters",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "comment on related matters"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/referring_to_others_comment",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "referring to others comment"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/knowing_the_piece",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "knowing the piece"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Musicality"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/PraiseSelf",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Praise Self"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Praise"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/disagree_with_feedback_received",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "disagree with feedback received"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Performance Strategies"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/expressiveness",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "expressiveness"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/pulse",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "pulse"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Praise",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Praise"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Reception",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Reception"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Listening"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/comment_type",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Comment"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "comment type"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Technique",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Technique"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Accuracy"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/doubting_own_listening_skills",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Listening"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "doubting own listening skills"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Practising",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Practising"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/encourage_performers",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/CommentType",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "encourage performers"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/critisise_self",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Critisise",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "critisise self"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/using_smilies",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "using smilies"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/identify_own_difficulties_goals",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/CommentType",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "identify own difficulties goals"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/concealing_difficulties",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/StayingInPerformanceMode",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "concealing difficulties"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Language",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Language"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/fingerwork",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Technique",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "fingerwork"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/phrase_as_a_question",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "phrase as a question"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/agree_with_feedback_received",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "agree with feedback received"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/CommentType",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Comment Type"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/stylistic_appropriateness",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "stylistic appropriateness"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/dealing_with_nerves",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "dealing with nerves"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/vibrato",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "vibrato"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/promote_active_listening",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/CommentType",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "promote active listening"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/reply_to_advice_request",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Reply"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "reply to advice request"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Preparedness"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Tempo",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Tempo"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/sound_quality",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/TechnologyRelated"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "sound quality"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/page_turning",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "page turning"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/support",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Technique"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "support"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/sharing_own_experience",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/CommentType",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "sharing own experience"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/engaging_the_listener",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Reception"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "engaging the listener"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/articulation",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "articulation"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/balance",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "balance"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/maybe_perhaps",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "maybe perhaps"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/reply_to_feedforward",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Reply",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "reply to feedforward"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Reply",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Reply"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/interaction",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Comment"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "interaction"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/metaphors",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "metaphors"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/practising_slowly",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Practising"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "practising slowly"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/characterisation",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "characterisation"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/expressed_in_very_general_terms",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "expressed in very general terms"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/music_circle_glitches",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/RelatedMatters",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "music circle glitches"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/request_action",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Request"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "request action"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/planning_rehearsals",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/PlanningPracticeActivities",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "planning rehearsals"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/Critisise",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Critisise"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/request_feedback",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Request"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "request feedback"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/slang",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "slang"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/togetherness",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Technique"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "togetherness"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/eye_contact",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "eye contact"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/dynamics",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "dynamics"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/direction",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Phrasing"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "direction"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/contradictory",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Language"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "contradictory"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/no_expert_disclaimer",
+        "@type": [
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Listening",
+            "http://www.w3.org/2002/07/owl#NamedIndividual"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "no expert disclaimer"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/grounded-ontology/1.0/giving_feedforward",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#NamedIndividual",
+            "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "giving feedforward"
+            }
+        ]
+    }
+]

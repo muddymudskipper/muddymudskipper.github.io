@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/support">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Technique"/>
+    <rdfs:label>support</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/ensemble_communication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>ensemble communication</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/">
+    <owl:imports rdf:resource="https://w3id.org/music-circle/platform-ontology/1.0/"/>
+    <dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-11-25</dcterms:date>
+    <owl:versionInfo>1.0</owl:versionInfo>
+    <dcterms:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
+    <dcterms:title>The Music Circle Grounded Ontology</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/CommentType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Comment Type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/pedalling">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+    <rdfs:label>pedalling</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/planning_rehearsals">
+    <rdfs:label>planning rehearsals</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/PlanningPracticeActivities"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/metaphors">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+    <rdfs:label>metaphors</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/request_feedforward">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Request"/>
+    <rdfs:label>request feedforward</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/background_noise">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Listening"/>
+    <rdfs:label>background noise</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/StayingInPerformanceMode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Staying In Performance Mode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/being_confident">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness"/>
+    <rdfs:label>being confident</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/providing_feedforward_self">
+    <rdfs:label>providing feedforward self</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/ProvidingFeedforward"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/rehearsing_together">
+    <rdfs:label>rehearsing together</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Practising"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/with_or_without_score">
+    <rdfs:label>with or without score</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Listening"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Practising">
+    <rdfs:label>Practising</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/giving_feedforward">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"/>
+    <rdfs:label>giving feedforward</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/explain_reasons_for_comment">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>explain reasons for comment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/thanking_for_input">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>thanking for input</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Reception">
+    <rdfs:label>Reception</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Listening"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/TechnologyRelated">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Listening"/>
+    <rdfs:label>Technology Related</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/articulation">
+    <rdfs:label>articulation</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/slang">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>slang</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/warming_up">
+    <rdfs:label>warming up</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Technique"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/first_name_basis">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>first name basis</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/disagree_with_feedback_received">
+    <rdfs:label>disagree with feedback received</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/authenticity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>authenticity</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/promote_active_listening">
+    <rdfs:label>promote active listening</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/expressiveness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+    <rdfs:label>expressiveness</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/exaggerated_positive_reaction">
+    <rdfs:label>exaggerated positive reaction</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/guiding_peer_feedback_process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"/>
+    <rdfs:label>guiding peer feedback process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/increasing_speed_gradually">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>increasing speed gradually</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Practising"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/dynamics">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>dynamics</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/language">
+    <rdfs:label>language</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/music-circle/platform-ontology/1.0/Comment"/>
+    <rdfs:range rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/listening_to_one_another">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Practising"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>listening to one another</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Language">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Language</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/engaging_the_listener">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>engaging the listener</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Reception"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/thinking_piece_as_a_whole">
+    <rdfs:label>thinking piece as a whole</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/practising_with_page_turner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Practising"/>
+    <rdfs:label>practising with page turner</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/note">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Accuracy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/request_feedback">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Request"/>
+    <rdfs:label>request feedback</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/ProvidingFeedforward">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"/>
+    <rdfs:label>Providing Feedforward</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Musicality</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/arrangement">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+    <rdfs:label>arrangement</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/minimising_issues">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>minimising issues</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/diction">
+    <rdfs:label>diction</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Technique"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/gradual_tempo_change">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Tempo"/>
+    <rdfs:label>gradual tempo change</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/request_advice_on_tempo">
+    <rdfs:label>request advice on tempo</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/RequestAdvice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/referring_to_others_comment">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>referring to others comment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/pulse">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>pulse</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/direction">
+    <rdfs:label>direction</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Phrasing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Phrasing">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Phrasing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/comment_type">
+    <rdfs:range rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"/>
+    <rdfs:label>comment type</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/music-circle/platform-ontology/1.0/Comment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/giving_feedback">
+    <rdfs:label>giving feedback</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/stylistic_appropriateness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>stylistic appropriateness</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/no_frills">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>no frills</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/eye_contact">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies"/>
+    <rdfs:label>eye contact</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/counting_out_loud">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Practising"/>
+    <rdfs:label>counting out loud</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/no_expert_disclaimer">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Listening"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>no expert disclaimer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/rhythmic">
+    <rdfs:label>rhythmic</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Accuracy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/identify_own_difficulties_goals">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"/>
+    <rdfs:label>identify own difficulties goals</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/RequestAdvice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Request Advice</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Request"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/reply_to_advice_request">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Reply"/>
+    <rdfs:label>reply to advice request</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/expressed_in_very_general_terms">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>expressed in very general terms</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/encourage_performers">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>encourage performers</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/togetherness">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Technique"/>
+    <rdfs:label>togetherness</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/blame_recording_for_reception_issues">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>blame recording for reception issues</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/TechnologyRelated"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/PraiseSelf">
+    <rdfs:label>Praise Self</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Praise"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/sharing_own_experience">
+    <rdfs:label>sharing own experience</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/having_fun_while_playing">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>having fun while playing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/waveform">
+    <rdfs:label>waveform</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/TechnologyRelated"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/critisise_self">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Critisise"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>critisise self</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/agree_with_feedback_received">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"/>
+    <rdfs:label>agree with feedback received</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic">
+    <rdfs:label>Discussion Topic</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/fingerwork">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Technique"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>fingerwork</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies">
+    <rdfs:label>Performance Strategies</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/reception_of_piece">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>reception of piece</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Reception"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/interaction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"/>
+    <rdfs:label>interaction</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/music-circle/platform-ontology/1.0/Comment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/contradictory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>contradictory</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Listening">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Listening</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/characterisation">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>characterisation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/comment_on_related_matters">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"/>
+    <rdfs:label>comment on related matters</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/phrase_as_a_question">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>phrase as a question</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/sound_quality">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>sound quality</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/TechnologyRelated"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/music_circle_glitches">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/RelatedMatters"/>
+    <rdfs:label>music circle glitches</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/breaking_down_piece_into_sections">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Practising"/>
+    <rdfs:label>breaking down piece into sections</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/counting">
+    <rdfs:label>counting</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Accuracy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Interaction">
+    <rdfs:label>Interaction</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/express_an_opinion">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+    <rdfs:label>express an opinion</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/concealing_difficulties">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/StayingInPerformanceMode"/>
+    <rdfs:label>concealing difficulties</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/advantages_of_recorded_performance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>advantages of recorded performance</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/TechnologyRelated"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Tempo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Tempo</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/breathing">
+    <rdfs:label>breathing</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Technique"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/knowing_the_piece">
+    <rdfs:label>knowing the piece</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/building_up">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Phrasing"/>
+    <rdfs:label>building up</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/linking">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>linking</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Phrasing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/using_smilies">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+    <rdfs:label>using smilies</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/flexibility">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>flexibility</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/request_advice_on_practising">
+    <rdfs:label>request advice on practising</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/RequestAdvice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Reply">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"/>
+    <rdfs:label>Reply</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/balance">
+    <rdfs:label>balance</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/incorrect_use_of_terminology">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>incorrect use of terminology</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/considering_acoustics">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>considering acoustics</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/practising_slowly">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>practising slowly</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Practising"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/mental_approach">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Technique"/>
+    <rdfs:label>mental approach</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Critisise">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"/>
+    <rdfs:label>Critisise</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/reply_to_feedforward">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Reply"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>reply to feedforward</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/reply_to_feedback">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Reply"/>
+    <rdfs:label>reply to feedback</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/straining">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Technique"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>straining</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/vibrato">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Musicality"/>
+    <rdfs:label>vibrato</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/intonation">
+    <rdfs:label>intonation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Technique"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/noticing_improvement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/PraiseSelf"/>
+    <rdfs:label>noticing improvement</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/forthcoming_ensemble_recital">
+    <rdfs:label>forthcoming ensemble recital</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/RelatedMatters"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Praise">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/CommentType"/>
+    <rdfs:label>Praise</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/posture">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Technique"/>
+    <rdfs:label>posture</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/dealing_with_nerves">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>dealing with nerves</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/doubting_own_listening_skills">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Listening"/>
+    <rdfs:label>doubting own listening skills</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Accuracy">
+    <rdfs:label>Accuracy</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Technique">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Technique</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Accuracy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/maybe_perhaps">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+    <rdfs:label>maybe perhaps</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/PlanningPracticeActivities">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Planning Practice Activities</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/imperative_mood">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Language"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>imperative mood</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/general">
+    <rdfs:label>general</rdfs:label>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Technique"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/topic">
+    <rdfs:label>topic</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/music-circle/platform-ontology/1.0/Comment"/>
+    <rdfs:range rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/request_clarification">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Request"/>
+    <rdfs:label>request clarification</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness">
+    <rdfs:label>Preparedness</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/tuning_before_playing">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies"/>
+    <rdfs:label>tuning before playing</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/performer_placement">
+    <rdfs:label>performer placement</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/Request">
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Interaction"/>
+    <rdfs:label>Request</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/page_turning">
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>page turning</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/RelatedMatters">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Related Matters</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/music-circle/grounded-ontology/1.0/request_action">
+    <rdfs:label>request action</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/music-circle/grounded-ontology/1.0/Request"/>
+  </rdf:Description>
+</rdf:RDF>

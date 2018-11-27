@@ -1,0 +1,1353 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/music-circle/grounded-ontology/1.0", "https://w3id.org/music-circle/platform-ontology/1.0" ],
+    "title" : {
+      "undefined" : "The Music Circle Grounded Ontology"
+    },
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/",
+    "version" : "1.0",
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2018-11-25",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0/",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Music Circle Grounded Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 26,
+    "objectPropertyCount" : 4,
+    "datatypePropertyCount" : 0,
+    "individualCount" : 101
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/PerformanceStrategies",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PerformanceStrategies",
+      "undefined" : "Performance Strategies"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/considering_acoustics",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "considering_acoustics",
+        "undefined" : "considering acoustics"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/performer_placement",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "performer_placement",
+        "undefined" : "performer placement"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/having_fun_while_playing",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "having_fun_while_playing",
+        "undefined" : "having fun while playing"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/tuning_before_playing",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "tuning_before_playing",
+        "undefined" : "tuning before playing"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/eye_contact",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "eye_contact",
+        "undefined" : "eye contact"
+      }
+    } ],
+    "subClasses" : [ "2" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/DiscussionTopic",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiscussionTopic",
+      "undefined" : "Discussion Topic"
+    },
+    "subClasses" : [ "6", "0", "7", "8", "9", "10" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Preparedness",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Preparedness",
+      "undefined" : "Preparedness"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/knowing_the_piece",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "knowing_the_piece",
+        "undefined" : "knowing the piece"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/page_turning",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "page_turning",
+        "undefined" : "page turning"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/being_confident",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "being_confident",
+        "undefined" : "being confident"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/dealing_with_nerves",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "dealing_with_nerves",
+        "undefined" : "dealing with nerves"
+      }
+    } ],
+    "subClasses" : [ "11" ],
+    "id" : "10",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Request",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Request",
+      "undefined" : "Request"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/request_action",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "request_action",
+        "undefined" : "request action"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/request_feedback",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "request_feedback",
+        "undefined" : "request feedback"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/request_feedforward",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "request_feedforward",
+        "undefined" : "request feedforward"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/request_clarification",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "request_clarification",
+        "undefined" : "request clarification"
+      }
+    } ],
+    "subClasses" : [ "18" ],
+    "id" : "17",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Praise",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Praise",
+      "undefined" : "Praise"
+    },
+    "subClasses" : [ "20" ],
+    "id" : "19",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/ProvidingFeedforward",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProvidingFeedforward",
+      "undefined" : "Providing Feedforward"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/providing_feedforward_self",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "providing_feedforward_self",
+        "undefined" : "providing feedforward self"
+      }
+    } ],
+    "id" : "21",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/RequestAdvice",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RequestAdvice",
+      "undefined" : "Request Advice"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/request_advice_on_tempo",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "request_advice_on_tempo",
+        "undefined" : "request advice on tempo"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/request_advice_on_practising",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "request_advice_on_practising",
+        "undefined" : "request advice on practising"
+      }
+    } ],
+    "id" : "18",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Reply",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reply",
+      "undefined" : "Reply"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/reply_to_feedback",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "reply_to_feedback",
+        "undefined" : "reply to feedback"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/reply_to_feedforward",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "reply_to_feedforward",
+        "undefined" : "reply to feedforward"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/reply_to_advice_request",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "reply_to_advice_request",
+        "undefined" : "reply to advice request"
+      }
+    } ],
+    "id" : "25",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Practising",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Practising",
+      "undefined" : "Practising"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/practising_slowly",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "practising_slowly",
+        "undefined" : "practising slowly"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/practising_with_page_turner",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "practising_with_page_turner",
+        "undefined" : "practising with page turner"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/increasing_speed_gradually",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "increasing_speed_gradually",
+        "undefined" : "increasing speed gradually"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/breaking_down_piece_into_sections",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "breaking_down_piece_into_sections",
+        "undefined" : "breaking down piece into sections"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/listening_to_one_another",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "listening_to_one_another",
+        "undefined" : "listening to one another"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/counting_out_loud",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "counting_out_loud",
+        "undefined" : "counting out loud"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/rehearsing_together",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "rehearsing_together",
+        "undefined" : "rehearsing together"
+      }
+    } ],
+    "id" : "11",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/TechnologyRelated",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnologyRelated",
+      "undefined" : "Technology Related"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/sound_quality",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "sound_quality",
+        "undefined" : "sound quality"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/blame_recording_for_reception_issues",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "blame_recording_for_reception_issues",
+        "undefined" : "blame recording for reception issues"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/advantages_of_recorded_performance",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "advantages_of_recorded_performance",
+        "undefined" : "advantages of recorded performance"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/waveform",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "waveform",
+        "undefined" : "waveform"
+      }
+    } ],
+    "id" : "34",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Critisise",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Critisise",
+      "undefined" : "Critisise"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/critisise_self",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "critisise_self",
+        "undefined" : "critisise self"
+      }
+    } ],
+    "id" : "35",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/CommentType",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommentType",
+      "undefined" : "Comment Type"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/identify_own_difficulties_goals",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "identify_own_difficulties_goals",
+        "undefined" : "identify own difficulties goals"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/encourage_performers",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "encourage_performers",
+        "undefined" : "encourage performers"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/sharing_own_experience",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "sharing_own_experience",
+        "undefined" : "sharing own experience"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/comment_on_related_matters",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "comment_on_related_matters",
+        "undefined" : "comment on related matters"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/explain_reasons_for_comment",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "explain_reasons_for_comment",
+        "undefined" : "explain reasons for comment"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/promote_active_listening",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "promote_active_listening",
+        "undefined" : "promote active listening"
+      }
+    } ],
+    "subClasses" : [ "35", "19", "21" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Language",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Language",
+      "undefined" : "Language"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/express_an_opinion",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "express_an_opinion",
+        "undefined" : "express an opinion"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/minimising_issues",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "minimising_issues",
+        "undefined" : "minimising issues"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/using_smilies",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "using_smilies",
+        "undefined" : "using smilies"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/exaggerated_positive_reaction",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "exaggerated_positive_reaction",
+        "undefined" : "exaggerated positive reaction"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/no_frills",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "no_frills",
+        "undefined" : "no frills"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/incorrect_use_of_terminology",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "incorrect_use_of_terminology",
+        "undefined" : "incorrect use of terminology"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/contradictory",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "contradictory",
+        "undefined" : "contradictory"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/imperative_mood",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "imperative_mood",
+        "undefined" : "imperative mood"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/expressed_in_very_general_terms",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "expressed_in_very_general_terms",
+        "undefined" : "expressed in very general terms"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/first_name_basis",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "first_name_basis",
+        "undefined" : "first name basis"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/maybe_perhaps",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "maybe_perhaps",
+        "undefined" : "maybe perhaps"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/phrase_as_a_question",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "phrase_as_a_question",
+        "undefined" : "phrase as a question"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/slang",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "slang",
+        "undefined" : "slang"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/metaphors",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "metaphors",
+        "undefined" : "metaphors"
+      }
+    } ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Accuracy",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Accuracy",
+      "undefined" : "Accuracy"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/note",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "note",
+        "undefined" : "note"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/counting",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "counting",
+        "undefined" : "counting"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/rhythmic",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "rhythmic",
+        "undefined" : "rhythmic"
+      }
+    } ],
+    "subClasses" : [ "36" ],
+    "id" : "6",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Musicality",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Musicality",
+      "undefined" : "Musicality"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/dynamics",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "dynamics",
+        "undefined" : "dynamics"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/characterisation",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "characterisation",
+        "undefined" : "characterisation"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/flexibility",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "flexibility",
+        "undefined" : "flexibility"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/arrangement",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "arrangement",
+        "undefined" : "arrangement"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/thinking_piece_as_a_whole",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "thinking_piece_as_a_whole",
+        "undefined" : "thinking piece as a whole"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/stylistic_appropriateness",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "stylistic_appropriateness",
+        "undefined" : "stylistic appropriateness"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/pedalling",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "pedalling",
+        "undefined" : "pedalling"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/sound_quality",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "sound_quality",
+        "undefined" : "sound quality"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/pulse",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "pulse",
+        "undefined" : "pulse"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/expressiveness",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "expressiveness",
+        "undefined" : "expressiveness"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/articulation",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "articulation",
+        "undefined" : "articulation"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/authenticity",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "authenticity",
+        "undefined" : "authenticity"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/balance",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "balance",
+        "undefined" : "balance"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/ensemble_communication",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "ensemble_communication",
+        "undefined" : "ensemble communication"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/vibrato",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "vibrato",
+        "undefined" : "vibrato"
+      }
+    } ],
+    "subClasses" : [ "37", "38" ],
+    "id" : "7",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Listening",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Listening",
+      "undefined" : "Listening"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/doubting_own_listening_skills",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "doubting_own_listening_skills",
+        "undefined" : "doubting own listening skills"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/background_noise",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "background_noise",
+        "undefined" : "background noise"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/no_expert_disclaimer",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "no_expert_disclaimer",
+        "undefined" : "no expert disclaimer"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/with_or_without_score",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "with_or_without_score",
+        "undefined" : "with or without score"
+      }
+    } ],
+    "subClasses" : [ "34", "39" ],
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/StayingInPerformanceMode",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StayingInPerformanceMode",
+      "undefined" : "Staying In Performance Mode"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/concealing_difficulties",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "concealing_difficulties",
+        "undefined" : "concealing difficulties"
+      }
+    } ],
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Phrasing",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Phrasing",
+      "undefined" : "Phrasing"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/building_up",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "building_up",
+        "undefined" : "building up"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/linking",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "linking",
+        "undefined" : "linking"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/direction",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "direction",
+        "undefined" : "direction"
+      }
+    } ],
+    "id" : "38",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/Comment",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Comment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Tempo",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tempo",
+      "undefined" : "Tempo"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/gradual_tempo_change",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "gradual_tempo_change",
+        "undefined" : "gradual tempo change"
+      }
+    } ],
+    "id" : "37",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Reception",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reception",
+      "undefined" : "Reception"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/engaging_the_listener",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "engaging_the_listener",
+        "undefined" : "engaging the listener"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/reception_of_piece",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "reception_of_piece",
+        "undefined" : "reception of piece"
+      }
+    } ],
+    "id" : "39",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/PraiseSelf",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PraiseSelf",
+      "undefined" : "Praise Self"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/noticing_improvement",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "noticing_improvement",
+        "undefined" : "noticing improvement"
+      }
+    } ],
+    "id" : "20",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/PlanningPracticeActivities",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PlanningPracticeActivities",
+      "undefined" : "Planning Practice Activities"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/planning_rehearsals",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "planning_rehearsals",
+        "undefined" : "planning rehearsals"
+      }
+    } ],
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Interaction",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interaction",
+      "undefined" : "Interaction"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/thanking_for_input",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "thanking_for_input",
+        "undefined" : "thanking for input"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/disagree_with_feedback_received",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "disagree_with_feedback_received",
+        "undefined" : "disagree with feedback received"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/giving_feedback",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "giving_feedback",
+        "undefined" : "giving feedback"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/agree_with_feedback_received",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "agree_with_feedback_received",
+        "undefined" : "agree with feedback received"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/giving_feedforward",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "giving_feedforward",
+        "undefined" : "giving feedforward"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/guiding_peer_feedback_process",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "guiding_peer_feedback_process",
+        "undefined" : "guiding peer feedback process"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/referring_to_others_comment",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "referring_to_others_comment",
+        "undefined" : "referring to others comment"
+      }
+    } ],
+    "subClasses" : [ "17", "25", "13" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/RelatedMatters",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RelatedMatters",
+      "undefined" : "Related Matters"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/forthcoming_ensemble_recital",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "forthcoming_ensemble_recital",
+        "undefined" : "forthcoming ensemble recital"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/music_circle_glitches",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "music_circle_glitches",
+        "undefined" : "music circle glitches"
+      }
+    } ],
+    "id" : "8",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/Technique",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Technique",
+      "undefined" : "Technique"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/diction",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "diction",
+        "undefined" : "diction"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/support",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "support",
+        "undefined" : "support"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/togetherness",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "togetherness",
+        "undefined" : "togetherness"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/straining",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "straining",
+        "undefined" : "straining"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/posture",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "posture",
+        "undefined" : "posture"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/breathing",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "breathing",
+        "undefined" : "breathing"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/fingerwork",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "fingerwork",
+        "undefined" : "fingerwork"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/warming_up",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "warming_up",
+        "undefined" : "warming up"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/mental_approach",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "mental_approach",
+        "undefined" : "mental approach"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/intonation",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "intonation",
+        "undefined" : "intonation"
+      }
+    }, {
+      "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/general",
+      "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+      "labels" : {
+        "IRI-based" : "general",
+        "undefined" : "general"
+      }
+    } ],
+    "id" : "36",
+    "superClasses" : [ "6" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/language",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "language",
+      "undefined" : "language"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/comment_type",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "comment_type",
+      "undefined" : "comment type"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "range" : "14",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "19",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "14",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "1",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "17",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/interaction",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "interaction",
+      "undefined" : "interaction"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "range" : "10",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "1",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "16",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "6",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "7",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "7",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "9",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "9",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "16",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "16",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://w3id.org/music-circle/grounded-ontology/1.0/topic",
+    "baseIri" : "https://w3id.org/music-circle/grounded-ontology/1.0",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "topic",
+      "undefined" : "topic"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  } ]
+}

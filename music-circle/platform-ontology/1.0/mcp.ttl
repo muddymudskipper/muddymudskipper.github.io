@@ -1,0 +1,97 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mcp: <https://w3id.org/music-circle/platform-ontology/1.0/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mcp: a owl:Ontology ;
+    dcterms:date "2018-11-25"^^xsd:date ;
+    dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:title "The Music Circle Platform Ontology" ;
+    owl:imports tl:,
+        mo:,
+        prov:,
+        foaf: ;
+    owl:versionInfo "1.0" .
+
+mcp:Posting a owl:Class ;
+    rdfs:label "Posting" ;
+    rdfs:comment "Posting a comment." ;
+    rdfs:subClassOf prov:Activity .
+
+mcp:Student a owl:Class ;
+    rdfs:label "Student" ;
+    rdfs:comment "A musical instrument student registered as a user." ;
+    rdfs:subClassOf mcp:User .
+
+mcp:Teacher a owl:Class ;
+    rdfs:label "Teacher" ;
+    rdfs:comment "A music performance teacher registered as a user." ;
+    rdfs:subClassOf mcp:User .
+
+mcp:Uploading a owl:Class ;
+    rdfs:label "Uploading" ;
+    rdfs:comment "Uploading audio material." ;
+    rdfs:subClassOf prov:Activity .
+
+mcp:comment_body a owl:DatatypeProperty ;
+    rdfs:label "comment body" ;
+    rdfs:comment "The text content of a comment." ;
+    rdfs:domain mcp:Comment ;
+    rdfs:range xsd:string .
+
+mcp:performance a owl:ObjectProperty ;
+    rdfs:label "performance" ;
+    rdfs:comment "Associates a comment to a music performance." ;
+    rdfs:domain mcp:Comment ;
+    rdfs:range mcp:Performance .
+
+mcp:performer a owl:ObjectProperty ;
+    rdfs:label "performer" ;
+    rdfs:comment "Links a music performance to one of its performers." ;
+    rdfs:domain mcp:Performance ;
+    rdfs:range mcp:User .
+
+mcp:reply a owl:ObjectProperty ;
+    rdfs:label "reply" ;
+    rdfs:comment "Associates a comment to another comment as a reply." ;
+    rdfs:domain mcp:Comment ;
+    rdfs:range mcp:Comment .
+
+mcp:signal a owl:ObjectProperty ;
+    rdfs:label "signal" ;
+    rdfs:comment "Associates a comment with a digital signal." ;
+    rdfs:domain mcp:Comment ;
+    rdfs:range mo:DigitalSignal ;
+    owl:propertyChainAxiom ( mcp:signal_time tl:timeline [ owl:inverseOf tl:timeline ] [ owl:inverseOf mo:time ] ) .
+
+mcp:signal_time a owl:ObjectProperty ;
+    rdfs:label "signal time" ;
+    rdfs:comment "Associates a comment to an interval on the audio signal timeline." ;
+    rdfs:domain mcp:Comment ;
+    rdfs:range tl:Interval .
+
+mcp:Performance a owl:Class ;
+    rdfs:label "Performance" ;
+    rdfs:comment "A music performance." ;
+    rdfs:subClassOf mo:Performance,
+        prov:Activity .
+
+mcp:User a owl:Class ;
+    rdfs:label "User" ;
+    rdfs:comment "A registered user of the Web platform." ;
+    rdfs:subClassOf prov:Agent,
+        foaf:Agent .
+
+mcp:Comment a owl:Class ;
+    rdfs:label "Comment" ;
+    rdfs:comment "A comment posted to the Web platform" ;
+    rdfs:subClassOf prov:Entity .
+

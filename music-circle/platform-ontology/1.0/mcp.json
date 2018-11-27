@@ -1,0 +1,386 @@
+[
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Teacher",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "A music performance teacher registered as a user."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Teacher"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/User"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Performance",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "A music performance."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Performance"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://purl.org/ontology/mo/Performance"
+            },
+            {
+                "@id": "http://www.w3.org/ns/prov#Activity"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Posting",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Posting a comment."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Posting"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://www.w3.org/ns/prov#Activity"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/signal",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Associates a comment with a digital signal."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Comment"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "signal"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://purl.org/ontology/mo/DigitalSignal"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#propertyChainAxiom": [
+            {
+                "@list": [
+                    {
+                        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/signal_time"
+                    },
+                    {
+                        "@id": "http://purl.org/NET/c4dm/timeline.owl#timeline"
+                    },
+                    {
+                        "@id": "_:ub5bL72C58"
+                    },
+                    {
+                        "@id": "_:ub5bL72C88"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "@id": "_:ub5bL72C58",
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://purl.org/NET/c4dm/timeline.owl#timeline"
+            }
+        ]
+    },
+    {
+        "@id": "_:ub5bL72C88",
+        "http://www.w3.org/2002/07/owl#inverseOf": [
+            {
+                "@id": "http://purl.org/ontology/mo/time"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/performer",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Links a music performance to one of its performers."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Performance"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "performer"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/User"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/comment_body",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "The text content of a comment."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Comment"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "comment body"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.w3.org/2001/XMLSchema#string"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/performance",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Associates a comment to a music performance."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Comment"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "performance"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Performance"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/reply",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Associates a comment to another comment as a reply."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Comment"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "reply"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Comment"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/signal_time",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Associates a comment to an interval on the audio signal timeline."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Comment"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "signal time"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://purl.org/NET/c4dm/timeline.owl#Interval"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Comment",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "A comment posted to the Web platform"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Comment"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://www.w3.org/ns/prov#Entity"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Student",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "A musical instrument student registered as a user."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Student"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/music-circle/platform-ontology/1.0/User"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/User",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "A registered user of the Web platform."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "User"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://xmlns.com/foaf/0.1/Agent"
+            },
+            {
+                "@id": "http://www.w3.org/ns/prov#Agent"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Ontology"
+        ],
+        "http://purl.org/dc/terms/date": [
+            {
+                "@type": "http://www.w3.org/2001/XMLSchema#date",
+                "@value": "2018-11-25"
+            }
+        ],
+        "http://purl.org/dc/terms/license": [
+            {
+                "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "The Music Circle Platform Ontology"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#imports": [
+            {
+                "@id": "http://purl.org/NET/c4dm/timeline.owl#"
+            },
+            {
+                "@id": "http://purl.org/ontology/mo/"
+            },
+            {
+                "@id": "http://www.w3.org/ns/prov#"
+            },
+            {
+                "@id": "http://xmlns.com/foaf/0.1/"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#versionInfo": [
+            {
+                "@value": "1.0"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/music-circle/platform-ontology/1.0/Uploading",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+            {
+                "@value": "Uploading audio material."
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Uploading"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://www.w3.org/ns/prov#Activity"
+            }
+        ]
+    }
+]

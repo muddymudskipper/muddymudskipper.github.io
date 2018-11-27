@@ -1,0 +1,471 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://purl.org/NET/c4dm/timeline.owl", "http://purl.org/ontology/mo", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "https://w3id.org/music-circle/platform-ontology/1.0" ],
+    "title" : {
+      "undefined" : "The Music Circle Platform Ontology"
+    },
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/",
+    "version" : "1.0",
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2018-11-25",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by-sa/4.0/",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Music Circle Platform Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 14,
+    "objectPropertyCount" : 7,
+    "datatypePropertyCount" : 1,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/prov#Activity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "subClasses" : [ "5", "6", "7" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/Posting",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Posting",
+      "undefined" : "Posting"
+    },
+    "comment" : {
+      "undefined" : "Posting a comment."
+    },
+    "id" : "5",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/Student",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Student",
+      "undefined" : "Student"
+    },
+    "comment" : {
+      "undefined" : "A musical instrument student registered as a user."
+    },
+    "id" : "19",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/User",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "User",
+      "undefined" : "User"
+    },
+    "subClasses" : [ "19", "21" ],
+    "comment" : {
+      "undefined" : "A registered user of the Web platform."
+    },
+    "id" : "11",
+    "superClasses" : [ "10", "23" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "3",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/mo/DigitalSignal",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DigitalSignal"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/Comment",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Comment",
+      "undefined" : "Comment"
+    },
+    "comment" : {
+      "undefined" : "A comment posted to the Web platform"
+    },
+    "id" : "1",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/Uploading",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Uploading",
+      "undefined" : "Uploading"
+    },
+    "comment" : {
+      "undefined" : "Uploading audio material."
+    },
+    "id" : "7",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/Teacher",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Teacher",
+      "undefined" : "Teacher"
+    },
+    "comment" : {
+      "undefined" : "A music performance teacher registered as a user."
+    },
+    "id" : "21",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#Interval",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interval"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "11" ],
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Performance",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Performance"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/Performance",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Performance",
+      "undefined" : "Performance"
+    },
+    "comment" : {
+      "undefined" : "A music performance."
+    },
+    "id" : "6",
+    "superClasses" : [ "4", "31" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/reply",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "reply",
+      "undefined" : "reply"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Associates a comment to another comment as a reply."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/time",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "time"
+    },
+    "domain" : "3",
+    "attributes" : [ "external", "object" ],
+    "id" : "2"
+  }, {
+    "range" : "4",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/performance",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "performance",
+      "undefined" : "performance"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Associates a comment to a music performance."
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "10",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "16",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/timeline.owl#timeline",
+    "baseIri" : "http://purl.org/NET/c4dm/timeline.owl",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "timeline"
+    },
+    "domain" : "3",
+    "attributes" : [ "external", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "11",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "18"
+  }, {
+    "range" : "11",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "23",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/signal_time",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "signal_time",
+      "undefined" : "signal time"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Associates a comment to an interval on the audio signal timeline."
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/signal",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "signal",
+      "undefined" : "signal"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Associates a comment with a digital signal."
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/comment_body",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "comment_body",
+      "undefined" : "comment body"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The text content of a comment."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "29"
+  }, {
+    "range" : "31",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/music-circle/platform-ontology/1.0/performer",
+    "baseIri" : "https://w3id.org/music-circle/platform-ontology/1.0",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "performer",
+      "undefined" : "performer"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Links a music performance to one of its performers."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  } ]
+}

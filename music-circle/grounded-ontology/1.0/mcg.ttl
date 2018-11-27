@@ -1,0 +1,542 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mcg: <https://w3id.org/music-circle/grounded-ontology/1.0/> .
+@prefix mcp: <https://w3id.org/music-circle/platform-ontology/1.0/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mcg: a owl:Ontology ;
+    dcterms:date "2018-11-25"^^xsd:date ;
+    dcterms:license <http://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:title "The Music Circle Grounded Ontology" ;
+    owl:imports mcp: ;
+    owl:versionInfo "1.0" .
+
+mcg:advantages_of_recorded_performance a owl:NamedIndividual,
+        mcg:TechnologyRelated ;
+    rdfs:label "advantages of recorded performance" .
+
+mcg:agree_with_feedback_received a owl:NamedIndividual,
+        mcg:Interaction ;
+    rdfs:label "agree with feedback received" .
+
+mcg:arrangement a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "arrangement" .
+
+mcg:articulation a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "articulation" .
+
+mcg:authenticity a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "authenticity" .
+
+mcg:background_noise a owl:NamedIndividual,
+        mcg:Listening ;
+    rdfs:label "background noise" .
+
+mcg:balance a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "balance" .
+
+mcg:being_confident a owl:NamedIndividual,
+        mcg:Preparedness ;
+    rdfs:label "being confident" .
+
+mcg:blame_recording_for_reception_issues a owl:NamedIndividual,
+        mcg:TechnologyRelated ;
+    rdfs:label "blame recording for reception issues" .
+
+mcg:breaking_down_piece_into_sections a owl:NamedIndividual,
+        mcg:Practising ;
+    rdfs:label "breaking down piece into sections" .
+
+mcg:breathing a owl:NamedIndividual,
+        mcg:Technique ;
+    rdfs:label "breathing" .
+
+mcg:building_up a owl:NamedIndividual,
+        mcg:Phrasing ;
+    rdfs:label "building up" .
+
+mcg:characterisation a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "characterisation" .
+
+mcg:comment_on_related_matters a owl:NamedIndividual,
+        mcg:CommentType ;
+    rdfs:label "comment on related matters" .
+
+mcg:comment_type a owl:ObjectProperty ;
+    rdfs:label "comment type" ;
+    rdfs:domain mcp:Comment ;
+    rdfs:range mcg:CommentType .
+
+mcg:concealing_difficulties a owl:NamedIndividual,
+        mcg:StayingInPerformanceMode ;
+    rdfs:label "concealing difficulties" .
+
+mcg:considering_acoustics a owl:NamedIndividual,
+        mcg:PerformanceStrategies ;
+    rdfs:label "considering acoustics" .
+
+mcg:contradictory a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "contradictory" .
+
+mcg:counting a owl:NamedIndividual,
+        mcg:Accuracy ;
+    rdfs:label "counting" .
+
+mcg:counting_out_loud a owl:NamedIndividual,
+        mcg:Practising ;
+    rdfs:label "counting out loud" .
+
+mcg:critisise_self a owl:NamedIndividual,
+        mcg:Critisise ;
+    rdfs:label "critisise self" .
+
+mcg:dealing_with_nerves a owl:NamedIndividual,
+        mcg:Preparedness ;
+    rdfs:label "dealing with nerves" .
+
+mcg:diction a owl:NamedIndividual,
+        mcg:Technique ;
+    rdfs:label "diction" .
+
+mcg:direction a owl:NamedIndividual,
+        mcg:Phrasing ;
+    rdfs:label "direction" .
+
+mcg:disagree_with_feedback_received a owl:NamedIndividual,
+        mcg:Interaction ;
+    rdfs:label "disagree with feedback received" .
+
+mcg:doubting_own_listening_skills a owl:NamedIndividual,
+        mcg:Listening ;
+    rdfs:label "doubting own listening skills" .
+
+mcg:dynamics a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "dynamics" .
+
+mcg:encourage_performers a owl:NamedIndividual,
+        mcg:CommentType ;
+    rdfs:label "encourage performers" .
+
+mcg:engaging_the_listener a owl:NamedIndividual,
+        mcg:Reception ;
+    rdfs:label "engaging the listener" .
+
+mcg:ensemble_communication a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "ensemble communication" .
+
+mcg:exaggerated_positive_reaction a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "exaggerated positive reaction" .
+
+mcg:explain_reasons_for_comment a owl:NamedIndividual,
+        mcg:CommentType ;
+    rdfs:label "explain reasons for comment" .
+
+mcg:express_an_opinion a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "express an opinion" .
+
+mcg:expressed_in_very_general_terms a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "expressed in very general terms" .
+
+mcg:expressiveness a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "expressiveness" .
+
+mcg:eye_contact a owl:NamedIndividual,
+        mcg:PerformanceStrategies ;
+    rdfs:label "eye contact" .
+
+mcg:fingerwork a owl:NamedIndividual,
+        mcg:Technique ;
+    rdfs:label "fingerwork" .
+
+mcg:first_name_basis a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "first name basis" .
+
+mcg:flexibility a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "flexibility" .
+
+mcg:forthcoming_ensemble_recital a owl:NamedIndividual,
+        mcg:RelatedMatters ;
+    rdfs:label "forthcoming ensemble recital" .
+
+mcg:general a owl:NamedIndividual,
+        mcg:Technique ;
+    rdfs:label "general" .
+
+mcg:giving_feedback a owl:NamedIndividual,
+        mcg:Interaction ;
+    rdfs:label "giving feedback" .
+
+mcg:giving_feedforward a owl:NamedIndividual,
+        mcg:Interaction ;
+    rdfs:label "giving feedforward" .
+
+mcg:gradual_tempo_change a owl:NamedIndividual,
+        mcg:Tempo ;
+    rdfs:label "gradual tempo change" .
+
+mcg:guiding_peer_feedback_process a owl:NamedIndividual,
+        mcg:Interaction ;
+    rdfs:label "guiding peer feedback process" .
+
+mcg:having_fun_while_playing a owl:NamedIndividual,
+        mcg:PerformanceStrategies ;
+    rdfs:label "having fun while playing" .
+
+mcg:identify_own_difficulties_goals a owl:NamedIndividual,
+        mcg:CommentType ;
+    rdfs:label "identify own difficulties goals" .
+
+mcg:imperative_mood a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "imperative mood" .
+
+mcg:incorrect_use_of_terminology a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "incorrect use of terminology" .
+
+mcg:increasing_speed_gradually a owl:NamedIndividual,
+        mcg:Practising ;
+    rdfs:label "increasing speed gradually" .
+
+mcg:interaction a owl:ObjectProperty ;
+    rdfs:label "interaction" ;
+    rdfs:domain mcp:Comment ;
+    rdfs:range mcg:Interaction .
+
+mcg:intonation a owl:NamedIndividual,
+        mcg:Technique ;
+    rdfs:label "intonation" .
+
+mcg:knowing_the_piece a owl:NamedIndividual,
+        mcg:Preparedness ;
+    rdfs:label "knowing the piece" .
+
+mcg:language a owl:ObjectProperty ;
+    rdfs:label "language" ;
+    rdfs:domain mcp:Comment ;
+    rdfs:range mcg:Language .
+
+mcg:linking a owl:NamedIndividual,
+        mcg:Phrasing ;
+    rdfs:label "linking" .
+
+mcg:listening_to_one_another a owl:NamedIndividual,
+        mcg:Practising ;
+    rdfs:label "listening to one another" .
+
+mcg:maybe_perhaps a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "maybe perhaps" .
+
+mcg:mental_approach a owl:NamedIndividual,
+        mcg:Technique ;
+    rdfs:label "mental approach" .
+
+mcg:metaphors a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "metaphors" .
+
+mcg:minimising_issues a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "minimising issues" .
+
+mcg:music_circle_glitches a owl:NamedIndividual,
+        mcg:RelatedMatters ;
+    rdfs:label "music circle glitches" .
+
+mcg:no_expert_disclaimer a owl:NamedIndividual,
+        mcg:Listening ;
+    rdfs:label "no expert disclaimer" .
+
+mcg:no_frills a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "no frills" .
+
+mcg:note a owl:NamedIndividual,
+        mcg:Accuracy ;
+    rdfs:label "note" .
+
+mcg:noticing_improvement a owl:NamedIndividual,
+        mcg:PraiseSelf ;
+    rdfs:label "noticing improvement" .
+
+mcg:page_turning a owl:NamedIndividual,
+        mcg:Preparedness ;
+    rdfs:label "page turning" .
+
+mcg:pedalling a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "pedalling" .
+
+mcg:performer_placement a owl:NamedIndividual,
+        mcg:PerformanceStrategies ;
+    rdfs:label "performer placement" .
+
+mcg:phrase_as_a_question a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "phrase as a question" .
+
+mcg:planning_rehearsals a owl:NamedIndividual,
+        mcg:PlanningPracticeActivities ;
+    rdfs:label "planning rehearsals" .
+
+mcg:posture a owl:NamedIndividual,
+        mcg:Technique ;
+    rdfs:label "posture" .
+
+mcg:practising_slowly a owl:NamedIndividual,
+        mcg:Practising ;
+    rdfs:label "practising slowly" .
+
+mcg:practising_with_page_turner a owl:NamedIndividual,
+        mcg:Practising ;
+    rdfs:label "practising with page turner" .
+
+mcg:promote_active_listening a owl:NamedIndividual,
+        mcg:CommentType ;
+    rdfs:label "promote active listening" .
+
+mcg:providing_feedforward_self a owl:NamedIndividual,
+        mcg:ProvidingFeedforward ;
+    rdfs:label "providing feedforward self" .
+
+mcg:pulse a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "pulse" .
+
+mcg:reception_of_piece a owl:NamedIndividual,
+        mcg:Reception ;
+    rdfs:label "reception of piece" .
+
+mcg:referring_to_others_comment a owl:NamedIndividual,
+        mcg:Interaction ;
+    rdfs:label "referring to others comment" .
+
+mcg:rehearsing_together a owl:NamedIndividual,
+        mcg:Practising ;
+    rdfs:label "rehearsing together" .
+
+mcg:reply_to_advice_request a owl:NamedIndividual,
+        mcg:Reply ;
+    rdfs:label "reply to advice request" .
+
+mcg:reply_to_feedback a owl:NamedIndividual,
+        mcg:Reply ;
+    rdfs:label "reply to feedback" .
+
+mcg:reply_to_feedforward a owl:NamedIndividual,
+        mcg:Reply ;
+    rdfs:label "reply to feedforward" .
+
+mcg:request_action a owl:NamedIndividual,
+        mcg:Request ;
+    rdfs:label "request action" .
+
+mcg:request_advice_on_practising a owl:NamedIndividual,
+        mcg:RequestAdvice ;
+    rdfs:label "request advice on practising" .
+
+mcg:request_advice_on_tempo a owl:NamedIndividual,
+        mcg:RequestAdvice ;
+    rdfs:label "request advice on tempo" .
+
+mcg:request_clarification a owl:NamedIndividual,
+        mcg:Request ;
+    rdfs:label "request clarification" .
+
+mcg:request_feedback a owl:NamedIndividual,
+        mcg:Request ;
+    rdfs:label "request feedback" .
+
+mcg:request_feedforward a owl:NamedIndividual,
+        mcg:Request ;
+    rdfs:label "request feedforward" .
+
+mcg:rhythmic a owl:NamedIndividual,
+        mcg:Accuracy ;
+    rdfs:label "rhythmic" .
+
+mcg:sharing_own_experience a owl:NamedIndividual,
+        mcg:CommentType ;
+    rdfs:label "sharing own experience" .
+
+mcg:slang a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "slang" .
+
+mcg:sound_quality a owl:NamedIndividual,
+        mcg:Musicality,
+        mcg:TechnologyRelated ;
+    rdfs:label "sound quality" .
+
+mcg:straining a owl:NamedIndividual,
+        mcg:Technique ;
+    rdfs:label "straining" .
+
+mcg:stylistic_appropriateness a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "stylistic appropriateness" .
+
+mcg:support a owl:NamedIndividual,
+        mcg:Technique ;
+    rdfs:label "support" .
+
+mcg:thanking_for_input a owl:NamedIndividual,
+        mcg:Interaction ;
+    rdfs:label "thanking for input" .
+
+mcg:thinking_piece_as_a_whole a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "thinking piece as a whole" .
+
+mcg:togetherness a owl:NamedIndividual,
+        mcg:Technique ;
+    rdfs:label "togetherness" .
+
+mcg:topic a owl:ObjectProperty ;
+    rdfs:label "topic" ;
+    rdfs:domain mcp:Comment ;
+    rdfs:range mcg:DiscussionTopic .
+
+mcg:tuning_before_playing a owl:NamedIndividual,
+        mcg:PerformanceStrategies ;
+    rdfs:label "tuning before playing" .
+
+mcg:using_smilies a owl:NamedIndividual,
+        mcg:Language ;
+    rdfs:label "using smilies" .
+
+mcg:vibrato a owl:NamedIndividual,
+        mcg:Musicality ;
+    rdfs:label "vibrato" .
+
+mcg:warming_up a owl:NamedIndividual,
+        mcg:Technique ;
+    rdfs:label "warming up" .
+
+mcg:waveform a owl:NamedIndividual,
+        mcg:TechnologyRelated ;
+    rdfs:label "waveform" .
+
+mcg:with_or_without_score a owl:NamedIndividual,
+        mcg:Listening ;
+    rdfs:label "with or without score" .
+
+mcg:Critisise a owl:Class ;
+    rdfs:label "Critisise" ;
+    rdfs:subClassOf mcg:CommentType .
+
+mcg:PlanningPracticeActivities a owl:Class ;
+    rdfs:label "Planning Practice Activities" ;
+    rdfs:subClassOf mcg:Interaction .
+
+mcg:Praise a owl:Class ;
+    rdfs:label "Praise" ;
+    rdfs:subClassOf mcg:CommentType .
+
+mcg:PraiseSelf a owl:Class ;
+    rdfs:label "Praise Self" ;
+    rdfs:subClassOf mcg:Praise .
+
+mcg:ProvidingFeedforward a owl:Class ;
+    rdfs:label "Providing Feedforward" ;
+    rdfs:subClassOf mcg:CommentType .
+
+mcg:StayingInPerformanceMode a owl:Class ;
+    rdfs:label "Staying In Performance Mode" ;
+    rdfs:subClassOf mcg:PerformanceStrategies .
+
+mcg:Tempo a owl:Class ;
+    rdfs:label "Tempo" ;
+    rdfs:subClassOf mcg:Musicality .
+
+mcg:Reception a owl:Class ;
+    rdfs:label "Reception" ;
+    rdfs:subClassOf mcg:Listening .
+
+mcg:RelatedMatters a owl:Class ;
+    rdfs:label "Related Matters" ;
+    rdfs:subClassOf mcg:DiscussionTopic .
+
+mcg:RequestAdvice a owl:Class ;
+    rdfs:label "Request Advice" ;
+    rdfs:subClassOf mcg:Request .
+
+mcg:Phrasing a owl:Class ;
+    rdfs:label "Phrasing" ;
+    rdfs:subClassOf mcg:Musicality .
+
+mcg:Reply a owl:Class ;
+    rdfs:label "Reply" ;
+    rdfs:subClassOf mcg:Interaction .
+
+mcg:Accuracy a owl:Class ;
+    rdfs:label "Accuracy" ;
+    rdfs:subClassOf mcg:DiscussionTopic .
+
+mcg:TechnologyRelated a owl:Class ;
+    rdfs:label "Technology Related" ;
+    rdfs:subClassOf mcg:Listening .
+
+mcg:Preparedness a owl:Class ;
+    rdfs:label "Preparedness" ;
+    rdfs:subClassOf mcg:DiscussionTopic .
+
+mcg:Request a owl:Class ;
+    rdfs:label "Request" ;
+    rdfs:subClassOf mcg:Interaction .
+
+mcg:Listening a owl:Class ;
+    rdfs:label "Listening" ;
+    rdfs:subClassOf mcg:DiscussionTopic .
+
+mcg:PerformanceStrategies a owl:Class ;
+    rdfs:label "Performance Strategies" ;
+    rdfs:subClassOf mcg:DiscussionTopic .
+
+mcg:DiscussionTopic a owl:Class ;
+    rdfs:label "Discussion Topic" .
+
+mcg:Practising a owl:Class ;
+    rdfs:label "Practising" ;
+    rdfs:subClassOf mcg:Preparedness .
+
+mcg:CommentType a owl:Class ;
+    rdfs:label "Comment Type" .
+
+mcg:Interaction a owl:Class ;
+    rdfs:label "Interaction" .
+
+mcg:Technique a owl:Class ;
+    rdfs:label "Technique" ;
+    rdfs:subClassOf mcg:Accuracy .
+
+mcg:Language a owl:Class ;
+    rdfs:label "Language" .
+
+mcg:Musicality a owl:Class ;
+    rdfs:label "Musicality" ;
+    rdfs:subClassOf mcg:DiscussionTopic .
+
