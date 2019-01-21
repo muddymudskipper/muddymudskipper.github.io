@@ -1,0 +1,216 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ecrm: <http://erlangen-crm.org/current/> .
+@prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix lmeo: <https://w3id.org/live-music-event-ontology/alpha_1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lmeo: a owl:Ontology ;
+    dc:creator "Florian Thalmann",
+        "Thomas Wilmering" ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    dcterms:title "The Live Music Event Ontology" ;
+    owl:imports ecrm:,
+        efrbroo:,
+        event:,
+        dcterms:,
+        mo: ;
+    owl:versionInfo "alpha 1" .
+
+lmeo:AudioSignal a owl:Class ;
+    rdfs:label "Audio Signal" ;
+    rdfs:subClassOf mo:Signal,
+        lmeo:CapturingArtifactExpression .
+
+lmeo:Badges a owl:Class ;
+    rdfs:label "Badges" ;
+    rdfs:subClassOf lmeo:PromotionalArtifact .
+
+lmeo:Diary a owl:Class ;
+    rdfs:label "Diary" ;
+    rdfs:subClassOf lmeo:FanMadeArtifact .
+
+lmeo:DigitalArtifactItem a owl:Class ;
+    rdfs:label "Digital Artifact Item" ;
+    rdfs:subClassOf lmeo:ArtifactItem .
+
+lmeo:Fanzine a owl:Class ;
+    rdfs:label "Fanzine" ;
+    rdfs:subClassOf lmeo:FanMadeArtifact .
+
+lmeo:Festival a owl:Class ;
+    rdfs:label "Festival" ;
+    rdfs:subClassOf lmeo:LiveMusicShow .
+
+lmeo:Flyer a owl:Class ;
+    rdfs:label "Flyer" ;
+    rdfs:subClassOf lmeo:PromotionalArtifact .
+
+lmeo:Letter a owl:Class ;
+    rdfs:label "Letter" ;
+    rdfs:subClassOf lmeo:FanMadeArtifact .
+
+lmeo:Photo a owl:Class ;
+    rdfs:label "Photo" ;
+    rdfs:subClassOf ecrm:E38_Image,
+        lmeo:CapturingArtifactExpression .
+
+lmeo:Poster a owl:Class ;
+    rdfs:label "Poster" ;
+    rdfs:subClassOf lmeo:PromotionalArtifact .
+
+lmeo:PrivateConcert a owl:Class ;
+    rdfs:label "Private Concert" ;
+    rdfs:subClassOf lmeo:Concert .
+
+lmeo:Program a owl:Class ;
+    rdfs:label "Program" ;
+    rdfs:subClassOf lmeo:PromotionalArtifact .
+
+lmeo:Scrapbook a owl:Class ;
+    rdfs:label "Scrapbook" ;
+    rdfs:subClassOf lmeo:FanMadeArtifact .
+
+lmeo:Showcase a owl:Class ;
+    rdfs:label "Showcase" ;
+    rdfs:subClassOf lmeo:LiveMusicShow .
+
+lmeo:Sticker a owl:Class ;
+    rdfs:label "Sticker" ;
+    rdfs:subClassOf lmeo:PromotionalArtifact .
+
+lmeo:Story a owl:Class ;
+    rdfs:label "Story" ;
+    rdfs:subClassOf lmeo:FanMadeArtifact .
+
+lmeo:VideoSignal a owl:Class ;
+    rdfs:label "Video Signal" ;
+    rdfs:subClassOf lmeo:CapturingArtifactExpression .
+
+lmeo:digital_image a owl:ObjectProperty ;
+    rdfs:label "digital image" ;
+    rdfs:domain lmeo:PhysicalArtifactItem ;
+    rdfs:range lmeo:DigitalImage ;
+    rdfs:subPropertyOf ecrm:P138i_has_representation .
+
+lmeo:documents a owl:ObjectProperty ;
+    rdfs:label "documents" ;
+    rdfs:domain lmeo:CapturingArtifactExpression ;
+    rdfs:subPropertyOf ecrm:P70_documents,
+        lmeo:associated_with .
+
+lmeo:item a owl:ObjectProperty ;
+    rdfs:label "item" ;
+    rdfs:domain lmeo:ArtifactManifestation ;
+    rdfs:range lmeo:ArtifactItem ;
+    rdfs:subPropertyOf efrbroo:R7i_has_example .
+
+lmeo:manifestation a owl:ObjectProperty ;
+    rdfs:label "manifestation" ;
+    rdfs:domain lmeo:ArtifactExpression ;
+    rdfs:range lmeo:ArtifactManifestation ;
+    rdfs:subPropertyOf efrbroo:R4_carriers_provided_by .
+
+lmeo:performance a owl:ObjectProperty ;
+    rdfs:label "performance" ;
+    rdfs:domain lmeo:LiveMusicShow ;
+    rdfs:range lmeo:MusicPerformance .
+
+lmeo:produced a owl:ObjectProperty ;
+    rdfs:label "produced" ;
+    rdfs:domain lmeo:CapturingEvent ;
+    rdfs:range lmeo:CapturingArtifactExpression ;
+    rdfs:subPropertyOf efrbroo:R17_created .
+
+lmeo:tour_event a owl:ObjectProperty ;
+    rdfs:label "tour event" ;
+    rdfs:domain lmeo:Tour,
+        lmeo:TourLeg ;
+    rdfs:range lmeo:LiveMusicShow ;
+    rdfs:subPropertyOf event:sub_event .
+
+lmeo:tour_leg a owl:ObjectProperty ;
+    rdfs:label "tour leg" ;
+    rdfs:domain lmeo:Tour ;
+    rdfs:range lmeo:TourLeg .
+
+lmeo:uri a owl:DatatypeProperty ;
+    rdfs:label "uri" ;
+    rdfs:range xsd:anyURI .
+
+lmeo:CapturingEvent a owl:Class ;
+    rdfs:label "Capturing Event" ;
+    rdfs:subClassOf efrbroo:F29_Recording_Event,
+        event:Event .
+
+lmeo:Concert a owl:Class ;
+    rdfs:label "Concert" ;
+    rdfs:subClassOf lmeo:LiveMusicShow .
+
+lmeo:DigitalImage a owl:Class ;
+    rdfs:label "Digital Image" .
+
+lmeo:MusicPerformance a owl:Class ;
+    rdfs:label "Music Performance" ;
+    rdfs:subClassOf lmeo:LiveMusicEvent .
+
+lmeo:PhysicalArtifactItem a owl:Class ;
+    rdfs:label "Physical Artifact Item" ;
+    rdfs:subClassOf lmeo:ArtifactItem .
+
+lmeo:associated_with a owl:ObjectProperty ;
+    rdfs:label "associated with" ;
+    rdfs:domain lmeo:ArtifactExpression ;
+    rdfs:range lmeo:LiveMusicEvent ;
+    rdfs:subPropertyOf ecrm:P67_refers_to .
+
+lmeo:ArtifactManifestation a owl:Class ;
+    rdfs:label "Artifact Manifestation" ;
+    rdfs:subClassOf efrbroo:F3_Manifestation_Product_Type .
+
+lmeo:Tour a owl:Class ;
+    rdfs:label "Tour" ;
+    rdfs:subClassOf lmeo:LiveMusicEvent .
+
+lmeo:TourLeg a owl:Class ;
+    rdfs:label "Tour Leg" ;
+    rdfs:subClassOf lmeo:LiveMusicEvent .
+
+lmeo:ArtifactItem a owl:Class ;
+    rdfs:label "Artifact Item" ;
+    rdfs:subClassOf efrbroo:F5_Item .
+
+lmeo:ArtifactExpression a owl:Class ;
+    rdfs:label "Artifact Expression" ;
+    rdfs:subClassOf efrbroo:F22_Self-Contained_Expression .
+
+lmeo:CapturingArtifactExpression a owl:Class ;
+    rdfs:label "Capturing Artifact Expression" ;
+    rdfs:subClassOf ecrm:E31_Document,
+        efrbroo:F26_Recording,
+        lmeo:ArtifactExpression .
+
+lmeo:FanMadeArtifact a owl:Class ;
+    rdfs:label "Fan Made Artifact" ;
+    rdfs:subClassOf lmeo:ArtifactExpression .
+
+lmeo:LiveMusicEvent a owl:Class ;
+    rdfs:label "Live Music Event" ;
+    rdfs:subClassOf ecrm:E5_Event,
+        event:Event .
+
+lmeo:LiveMusicShow a owl:Class ;
+    rdfs:label "Live Music Show" ;
+    rdfs:subClassOf mo:Performance,
+        lmeo:LiveMusicEvent .
+
+lmeo:PromotionalArtifact a owl:Class ;
+    rdfs:label "Promotional Artifact" ;
+    rdfs:subClassOf lmeo:ArtifactExpression .
+

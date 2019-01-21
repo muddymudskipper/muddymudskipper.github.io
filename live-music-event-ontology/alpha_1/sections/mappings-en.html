@@ -1,0 +1,179 @@
+<h2 class="list" id="mappings">Ontology Mapping <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+</span>
+Proposed mappings to the Music Ontology and FRBRoo, both of which are based on the FRBR model, are given in the tables below. The mappings enable exploiting the expressivity of the Music Ontology for domain-specific music-related information, as well as of FRBRoo to capture the semantics of bibliographic information and
+facilitate the integration, mediation, and interchange of bibliographic and museum information.
+
+
+<div id="Music Ontology">
+<h3 class="list" id="ns2">Music Ontology</h3>
+<div align="center" id="ns2">
+
+        <style>
+                .data-table {
+                    border-collapse: collapse;
+                }
+                .border-top {
+                    border-top: 1px solid #000;
+                }
+                .border-bottom {
+                    border-bottom: 1px solid #000;
+                }
+                .border-left {
+                    border-left: 1px solid #000;
+                }
+                .border-right {
+                    border-right: 1px solid #000;
+                }
+            </style>
+    
+<table class="data-table">
+        <caption><a href="#ns2"> Table 2</a>: Music Ontology mapping</caption>
+    <tr>
+        <th class="border-top border-bottom border-left border-right">Concept</th>
+        <th class="border-top border-bottom border-right"></th>
+        <th class="border-top border-bottom border-right">Music Ontology</th>
+    </tr>
+    <tr>
+        <td class="border-bottom border-left border-right">ArtifactItem</td>
+        <td class="border-bottom border-right">superclass of</td>
+        <td class="border-bottom border-right">MusicalItem</td>
+    </tr>
+    <tr>
+        <td class="border-bottom border-left border-right">ArtifactManifestation</td>
+        <td class="border-bottom border-right">superclass of</td>
+        <td class="border-bottom border-right">MusicalManifestation</td>
+    </tr>
+    <tr>
+        <td class="border-bottom border-left border-right">AudioSignal</td>
+        <td class="border-bottom border-right">subclass of</td>
+        <td class="border-bottom border-right">Signal</td>
+    </tr>
+    <tr>
+        <td class="border-bottom border-left border-right">CapturingEvent</td>
+        <td class="border-bottom border-right">superclass of</td>
+        <td class="border-bottom border-right">Recording</td>
+    </tr>
+    <tr>
+        <td class="border-bottom border-left border-right">MusicEvent</td>
+        <td class="border-bottom border-right">subclass of</td>
+        <td class="border-bottom border-right">Performance</td>
+    </tr>
+    <tr>
+        <td class="border-bottom border-left border-right">item</td>
+        <td class="border-bottom border-right">superproperty of</td>
+        <td class="border-bottom border-right">item</td>
+    </tr>
+    <tr>
+        <td class="border-bottom border-left border-right">manifestation</td>
+        <td class="border-bottom border-right">superproperty of</td>
+        <td class="border-bottom border-right">published_as</td>
+    </tr>
+    <tr>
+        <td class="border-bottom border-left border-right">produced</td>
+        <td class="border-bottom border-right">superproperty&nbsp;of</td>
+        <td class="border-bottom border-right">produced_signal</td>
+    </tr>
+</table>
+</div>
+
+<div id="cidoc">
+    <h3 class="list" id="ns3">CIDOC CRM/FRBRoo</h3>
+    <div align="center" id="ns3">
+            <style>
+                    .data-table {
+                        border-collapse: collapse;
+                    }
+                    .border-top {
+                        border-top: 1px solid #000;
+                    }
+                    .border-bottom {
+                        border-bottom: 1px solid #000;
+                    }
+                    .border-left {
+                        border-left: 1px solid #000;
+                    }
+                    .border-right {
+                        border-right: 1px solid #000;
+                    }
+                </style>
+        
+        
+        <table class="data-table">
+                <caption><a href="#ns3"> Table 3</a>: CIDOC CRM/FRBRoo mapping</caption>
+            <tr>
+                <th class="border-top border-bottom border-left border-right">Concept</th>
+                <th class="border-top border-bottom border-right"></th>
+                <th class="border-top border-bottom border-right">CIDOC CRM/FRBRoo</th>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">Event</td>
+                <td class="border-bottom border-right">subclass of</td>
+                <td class="border-bottom border-right">E5 Event</td>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">ArtifactExpression</td>
+                <td class="border-bottom border-right">subclass of</td>
+                <td class="border-bottom border-right">F22 Self-Contained Expression</td>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">CapturingArtifactExpression</td>
+                <td class="border-bottom border-right">subclass of</td>
+                <td class="border-bottom border-right">F26 Recording, E31 Document</td>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">ArtifactManifestation</td>
+                <td class="border-bottom border-right">subclass of</td>
+                <td class="border-bottom border-right">F3 Manifestation Product Type</td>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">ArtifactItem</td>
+                <td class="border-bottom border-right">subclass of</td>
+                <td class="border-bottom border-right">F5 Item</td>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">CapturingEvent</td>
+                <td class="border-bottom border-right">subclass of</td>
+                <td class="border-bottom border-right">F29 Recording Event</td>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">EventPhoto</td>
+                <td class="border-bottom border-right">subclass of</td>
+                <td class="border-bottom border-right">E38 Image</td>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">produced</td>
+                <td class="border-bottom border-right">subproperty&nbsp;of</td>
+                <td class="border-bottom border-right">R17 created</td>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">associated_with</td>
+                <td class="border-bottom border-right">subproperty&nbsp;of</td>
+                <td class="border-bottom border-right">P67 refers to</td>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">documents</td>
+                <td class="border-bottom border-right">subproperty&nbsp;of</td>
+                <td class="border-bottom border-right">P70 documents</td>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">manifestation</td>
+                <td class="border-bottom border-right">subproperty&nbsp;of</td>
+                <td class="border-bottom border-right">R4 carriers provided by</td>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">item</td>
+                <td class="border-bottom border-right">subproperty&nbsp;of</td>
+                <td class="border-bottom border-right">R7i has example</td>
+            </tr>
+            <tr>
+                <td class="border-bottom border-left border-right">digital_image</td>
+                <td class="border-bottom border-right">subproperty&nbsp;of</td>
+                <td class="border-bottom border-right">P138i has representation</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</div>
