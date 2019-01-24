@@ -1,2 +1,0 @@
-The Live Music Ontology
-===================
