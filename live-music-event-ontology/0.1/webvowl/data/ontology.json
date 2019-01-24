@@ -2,7 +2,7 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://purl.org/NET/c4dm/event.owl", "https://w3id.org/live-music-event-ontology/0.1", "http://erlangen-crm.org/efrbroo", "http://www.w3.org/2000/01/rdf-schema", "http://erlangen-crm.org/current", "http://purl.org/ontology/mo", "http://www.w3.org/2001/XMLSchema" ],
+    "baseIris" : [ "https://w3id.org/live-music-event-ontology/0.1", "http://purl.org/NET/c4dm/event.owl", "http://erlangen-crm.org/efrbroo", "http://www.w3.org/2000/01/rdf-schema", "http://erlangen-crm.org/current", "http://purl.org/ontology/mo", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
       "undefined" : "The Live Music Event Ontology"
     },
@@ -49,31 +49,25 @@
     "individualCount" : 0
   },
   "class" : [ {
-    "id" : "6",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "22",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
+    "id" : "20",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "44",
+    "id" : "29",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "47",
+    "id" : "40",
     "type" : "owl:Class"
   }, {
     "id" : "28",
@@ -82,399 +76,121 @@
     "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "23",
-    "type" : "owl:Class"
-  }, {
-    "id" : "63",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "46",
-    "type" : "owl:Class"
-  }, {
-    "id" : "79",
-    "type" : "owl:Class"
-  }, {
-    "id" : "66",
-    "type" : "owl:Class"
-  }, {
-    "id" : "38",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
     "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "30",
+    "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
-    "type" : "owl:Class"
-  }, {
-    "id" : "86",
-    "type" : "owl:Class"
-  }, {
-    "id" : "55",
-    "type" : "owl:Class"
-  }, {
-    "id" : "39",
-    "type" : "owl:Class"
-  }, {
-    "id" : "87",
-    "type" : "owl:Class"
-  }, {
-    "id" : "33",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
+    "id" : "65",
     "type" : "owl:Class"
   }, {
     "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "17",
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
     "type" : "owl:Class"
   }, {
     "id" : "4",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "19",
     "type" : "owl:Class"
   }, {
-    "id" : "76",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "35",
     "type" : "owl:Class"
   }, {
     "id" : "16",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
     "type" : "owl:Class"
   }, {
     "id" : "93",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:Class"
   }, {
-    "id" : "94",
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
     "type" : "owl:Thing"
   }, {
-    "id" : "73",
+    "id" : "95",
     "type" : "owl:Class"
   }, {
-    "id" : "83",
-    "type" : "owl:Class"
-  }, {
-    "id" : "43",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
     "id" : "72",
     "type" : "owl:Class"
   }, {
-    "id" : "68",
+    "id" : "82",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Diary",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Diary",
-      "undefined" : "Diary"
-    },
-    "id" : "6",
-    "superClasses" : [ "7" ]
-  }, {
-    "iri" : "http://purl.org/NET/c4dm/event.owl#Event",
-    "baseIri" : "http://purl.org/NET/c4dm/event.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Event"
-    },
-    "subClasses" : [ "13", "14" ],
-    "attributes" : [ "external" ],
-    "id" : "12"
-  }, {
-    "iri" : "http://erlangen-crm.org/current/E38_Image",
-    "baseIri" : "http://erlangen-crm.org/current",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "E38_Image"
-    },
-    "subClasses" : [ "23" ],
-    "attributes" : [ "external" ],
-    "id" : "22"
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Letter",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Letter",
-      "undefined" : "Letter"
-    },
-    "id" : "31",
-    "superClasses" : [ "7" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/PhysicalArtifactItem",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PhysicalArtifactItem",
-      "undefined" : "Physical Artifact Item"
-    },
-    "id" : "9",
-    "superClasses" : [ "1" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Fanzine",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Fanzine",
-      "undefined" : "Fanzine"
-    },
-    "id" : "44",
-    "superClasses" : [ "7" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Poster",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Poster",
-      "undefined" : "Poster"
-    },
-    "id" : "41",
-    "superClasses" : [ "28" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/FanMadeArtifact",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FanMadeArtifact",
-      "undefined" : "Fan Made Artifact"
-    },
-    "subClasses" : [ "44", "31", "45", "6", "46" ],
-    "id" : "7",
-    "superClasses" : [ "38" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Concert",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Concert",
-      "undefined" : "Concert"
-    },
-    "subClasses" : [ "48" ],
-    "id" : "47",
-    "superClasses" : [ "20" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/PromotionalArtifact",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PromotionalArtifact",
-      "undefined" : "Promotional Artifact"
-    },
-    "subClasses" : [ "36", "43", "41", "30", "27" ],
-    "id" : "28",
-    "superClasses" : [ "38" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/VideoSignal",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VideoSignal",
-      "undefined" : "Video Signal"
-    },
-    "id" : "51",
-    "superClasses" : [ "16" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Photo",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Photo",
-      "undefined" : "Photo"
-    },
-    "id" : "23",
-    "superClasses" : [ "22", "16" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/ArtifactManifestation",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ArtifactManifestation",
-      "undefined" : "Artifact Manifestation"
-    },
-    "id" : "63",
-    "superClasses" : [ "64" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Scrapbook",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Scrapbook",
-      "undefined" : "Scrapbook"
-    },
-    "id" : "45",
-    "superClasses" : [ "7" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/DigitalImage",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DigitalImage",
-      "undefined" : "Digital Image"
-    },
-    "id" : "10"
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Sticker",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Sticker",
-      "undefined" : "Sticker"
-    },
-    "id" : "27",
-    "superClasses" : [ "28" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Story",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Story",
-      "undefined" : "Story"
-    },
-    "id" : "46",
-    "superClasses" : [ "7" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Tour",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Tour",
-      "undefined" : "Tour"
-    },
-    "id" : "79",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "http://erlangen-crm.org/efrbroo/F29_Recording_Event",
-    "baseIri" : "http://erlangen-crm.org/efrbroo",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "F29_Recording_Event"
-    },
-    "subClasses" : [ "14" ],
-    "attributes" : [ "external" ],
-    "id" : "66"
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/ArtifactExpression",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ArtifactExpression",
-      "undefined" : "Artifact Expression"
-    },
-    "subClasses" : [ "28", "7", "16" ],
-    "id" : "38",
-    "superClasses" : [ "39" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/PrivateConcert",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PrivateConcert",
-      "undefined" : "Private Concert"
-    },
-    "id" : "48",
-    "superClasses" : [ "47" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Flyer",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Flyer",
-      "undefined" : "Flyer"
-    },
-    "id" : "30",
-    "superClasses" : [ "28" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/LiveMusicShow",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LiveMusicShow",
-      "undefined" : "Live Music Show"
-    },
-    "subClasses" : [ "47", "86", "87" ],
-    "id" : "20",
-    "superClasses" : [ "13", "25" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Badges",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Badges",
-      "undefined" : "Badges"
-    },
-    "id" : "36",
-    "superClasses" : [ "28" ]
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Showcase",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Showcase",
-      "undefined" : "Showcase"
-    },
-    "id" : "86",
-    "superClasses" : [ "20" ]
-  }, {
-    "iri" : "http://erlangen-crm.org/current/E5_Event",
-    "baseIri" : "http://erlangen-crm.org/current",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "E5_Event"
-    },
-    "subClasses" : [ "13" ],
-    "attributes" : [ "external" ],
-    "id" : "55"
-  }, {
-    "iri" : "http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression",
-    "baseIri" : "http://erlangen-crm.org/efrbroo",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "F22_Self-Contained_Expression"
-    },
-    "subClasses" : [ "38" ],
-    "attributes" : [ "external" ],
-    "id" : "39"
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Festival",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Festival",
-      "undefined" : "Festival"
-    },
-    "id" : "87",
-    "superClasses" : [ "20" ]
-  }, {
     "iri" : "https://w3id.org/live-music-event-ontology/0.1/DigitalArtifactItem",
     "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
@@ -482,8 +198,8 @@
       "IRI-based" : "DigitalArtifactItem",
       "undefined" : "Digital Artifact Item"
     },
-    "id" : "33",
-    "superClasses" : [ "1" ]
+    "id" : "11",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/live-music-event-ontology/0.1/ArtifactItem",
     "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
@@ -492,61 +208,80 @@
       "IRI-based" : "ArtifactItem",
       "undefined" : "Artifact Item"
     },
-    "subClasses" : [ "9", "33" ],
-    "id" : "1",
-    "superClasses" : [ "2" ]
+    "subClasses" : [ "11", "14" ],
+    "id" : "12",
+    "superClasses" : [ "13" ]
   }, {
-    "iri" : "http://purl.org/ontology/mo/Performance",
-    "baseIri" : "http://purl.org/ontology/mo",
+    "iri" : "http://purl.org/NET/c4dm/event.owl#Event",
+    "baseIri" : "http://purl.org/NET/c4dm/event.owl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Performance"
+      "IRI-based" : "Event"
     },
-    "subClasses" : [ "20" ],
+    "subClasses" : [ "16", "17" ],
     "attributes" : [ "external" ],
-    "id" : "25"
+    "id" : "15"
   }, {
-    "iri" : "http://erlangen-crm.org/current/E31_Document",
+    "iri" : "http://erlangen-crm.org/current/E38_Image",
     "baseIri" : "http://erlangen-crm.org/current",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "E31_Document"
+      "IRI-based" : "E38_Image"
     },
-    "subClasses" : [ "16" ],
+    "subClasses" : [ "21" ],
     "attributes" : [ "external" ],
-    "id" : "17"
+    "id" : "20"
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "4",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "83", "79" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "19"
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/MusicPerformance",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Scrapbook",
     "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "MusicPerformance",
-      "undefined" : "Music Performance"
+      "IRI-based" : "Scrapbook",
+      "undefined" : "Scrapbook"
     },
-    "id" : "76",
-    "superClasses" : [ "13" ]
+    "id" : "24",
+    "superClasses" : [ "25" ]
   }, {
-    "iri" : "http://erlangen-crm.org/efrbroo/F5_Item",
-    "baseIri" : "http://erlangen-crm.org/efrbroo",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Festival",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "F5_Item"
+      "IRI-based" : "Festival",
+      "undefined" : "Festival"
     },
-    "subClasses" : [ "1" ],
-    "attributes" : [ "external" ],
-    "id" : "2"
+    "id" : "29",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Tour",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tour",
+      "undefined" : "Tour"
+    },
+    "id" : "40",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/ArtifactExpression",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArtifactExpression",
+      "undefined" : "Artifact Expression"
+    },
+    "subClasses" : [ "25", "27", "5" ],
+    "id" : "28",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Program",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Program",
+      "undefined" : "Program"
+    },
+    "id" : "51",
+    "superClasses" : [ "27" ]
   }, {
     "iri" : "https://w3id.org/live-music-event-ontology/0.1/CapturingArtifactExpression",
     "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
@@ -555,9 +290,112 @@
       "IRI-based" : "CapturingArtifactExpression",
       "undefined" : "Capturing Artifact Expression"
     },
-    "subClasses" : [ "23", "72", "51" ],
-    "id" : "16",
-    "superClasses" : [ "38", "17", "68" ]
+    "subClasses" : [ "19", "4", "21" ],
+    "id" : "5",
+    "superClasses" : [ "58", "59", "28" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Sticker",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sticker",
+      "undefined" : "Sticker"
+    },
+    "id" : "48",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Photo",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Photo",
+      "undefined" : "Photo"
+    },
+    "id" : "21",
+    "superClasses" : [ "20", "5" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/LiveMusicShow",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LiveMusicShow",
+      "undefined" : "Live Music Show"
+    },
+    "subClasses" : [ "29", "68", "72" ],
+    "id" : "9",
+    "superClasses" : [ "16", "23" ]
+  }, {
+    "iri" : "http://erlangen-crm.org/efrbroo/F29_Recording_Event",
+    "baseIri" : "http://erlangen-crm.org/efrbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F29_Recording_Event"
+    },
+    "subClasses" : [ "17" ],
+    "attributes" : [ "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/FanMadeArtifact",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FanMadeArtifact",
+      "undefined" : "Fan Made Artifact"
+    },
+    "subClasses" : [ "84", "85", "24", "86", "87" ],
+    "id" : "25",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/PromotionalArtifact",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PromotionalArtifact",
+      "undefined" : "Promotional Artifact"
+    },
+    "subClasses" : [ "88", "53", "61", "51", "48" ],
+    "id" : "27",
+    "superClasses" : [ "28" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/ArtifactManifestation",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArtifactManifestation",
+      "undefined" : "Artifact Manifestation"
+    },
+    "id" : "56",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/VideoSignal",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VideoSignal",
+      "undefined" : "Video Signal"
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/PhysicalArtifactItem",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysicalArtifactItem",
+      "undefined" : "Physical Artifact Item"
+    },
+    "id" : "14",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/TourLeg",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TourLeg",
+      "undefined" : "Tour Leg"
+    },
+    "id" : "35",
+    "superClasses" : [ "16" ]
   }, {
     "iri" : "https://w3id.org/live-music-event-ontology/0.1/LiveMusicEvent",
     "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
@@ -566,9 +404,140 @@
       "IRI-based" : "LiveMusicEvent",
       "undefined" : "Live Music Event"
     },
-    "subClasses" : [ "83", "76", "20", "79" ],
-    "id" : "13",
-    "superClasses" : [ "12", "55" ]
+    "subClasses" : [ "9", "10", "35", "40" ],
+    "id" : "16",
+    "superClasses" : [ "15", "38" ]
+  }, {
+    "iri" : "http://erlangen-crm.org/current/E5_Event",
+    "baseIri" : "http://erlangen-crm.org/current",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E5_Event"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Letter",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Letter",
+      "undefined" : "Letter"
+    },
+    "id" : "85",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression",
+    "baseIri" : "http://erlangen-crm.org/efrbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F22_Self-Contained_Expression"
+    },
+    "subClasses" : [ "28" ],
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Story",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Story",
+      "undefined" : "Story"
+    },
+    "id" : "86",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/CapturingEvent",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CapturingEvent",
+      "undefined" : "Capturing Event"
+    },
+    "id" : "17",
+    "superClasses" : [ "15", "65" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/AudioSignal",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AudioSignal",
+      "undefined" : "Audio Signal"
+    },
+    "id" : "19",
+    "superClasses" : [ "76", "5" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/DigitalImage",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DigitalImage",
+      "undefined" : "Digital Image"
+    },
+    "id" : "93"
+  }, {
+    "iri" : "http://purl.org/ontology/mo/Performance",
+    "baseIri" : "http://purl.org/ontology/mo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Performance"
+    },
+    "subClasses" : [ "9" ],
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Badges",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Badges",
+      "undefined" : "Badges"
+    },
+    "id" : "88",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://erlangen-crm.org/current/E31_Document",
+    "baseIri" : "http://erlangen-crm.org/current",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E31_Document"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "70",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "35", "40" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://erlangen-crm.org/efrbroo/F5_Item",
+    "baseIri" : "http://erlangen-crm.org/efrbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F5_Item"
+    },
+    "subClasses" : [ "12" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Showcase",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Showcase",
+      "undefined" : "Showcase"
+    },
+    "id" : "72",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://erlangen-crm.org/efrbroo/F3_Manifestation_Product_Type",
     "baseIri" : "http://erlangen-crm.org/efrbroo",
@@ -576,20 +545,40 @@
     "label" : {
       "IRI-based" : "F3_Manifestation_Product_Type"
     },
-    "subClasses" : [ "63" ],
+    "subClasses" : [ "56" ],
     "attributes" : [ "external" ],
-    "id" : "64"
+    "id" : "82"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "93",
+    "id" : "2",
     "label" : {
       "IRI-based" : "anyURI"
     }
   }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Diary",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Diary",
+      "undefined" : "Diary"
+    },
+    "id" : "84",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Poster",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Poster",
+      "undefined" : "Poster"
+    },
+    "id" : "53",
+    "superClasses" : [ "27" ]
+  }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "94",
+    "id" : "1",
     "label" : {
       "undefined" : "Thing"
     }
@@ -600,39 +589,39 @@
     "label" : {
       "IRI-based" : "Signal"
     },
-    "subClasses" : [ "72" ],
+    "subClasses" : [ "19" ],
     "attributes" : [ "external" ],
-    "id" : "73"
+    "id" : "76"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/TourLeg",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Flyer",
     "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "TourLeg",
-      "undefined" : "Tour Leg"
+      "IRI-based" : "Flyer",
+      "undefined" : "Flyer"
     },
-    "id" : "83",
-    "superClasses" : [ "13" ]
+    "id" : "61",
+    "superClasses" : [ "27" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Program",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/PrivateConcert",
     "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Program",
-      "undefined" : "Program"
+      "IRI-based" : "PrivateConcert",
+      "undefined" : "Private Concert"
     },
-    "id" : "43",
-    "superClasses" : [ "28" ]
+    "id" : "67",
+    "superClasses" : [ "68" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/AudioSignal",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/MusicPerformance",
     "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "AudioSignal",
-      "undefined" : "Audio Signal"
+      "IRI-based" : "MusicPerformance",
+      "undefined" : "Music Performance"
     },
-    "id" : "72",
-    "superClasses" : [ "73", "16" ]
+    "id" : "10",
+    "superClasses" : [ "16" ]
   }, {
     "iri" : "http://erlangen-crm.org/efrbroo/F26_Recording",
     "baseIri" : "http://erlangen-crm.org/efrbroo",
@@ -640,61 +629,93 @@
     "label" : {
       "IRI-based" : "F26_Recording"
     },
-    "subClasses" : [ "16" ],
+    "subClasses" : [ "5" ],
     "attributes" : [ "external" ],
-    "id" : "68"
+    "id" : "59"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/CapturingEvent",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Fanzine",
     "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "CapturingEvent",
-      "undefined" : "Capturing Event"
+      "IRI-based" : "Fanzine",
+      "undefined" : "Fanzine"
     },
-    "id" : "14",
-    "superClasses" : [ "12", "66" ]
+    "id" : "87",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Concert",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concert",
+      "undefined" : "Concert"
+    },
+    "subClasses" : [ "67" ],
+    "id" : "68",
+    "superClasses" : [ "9" ]
   } ],
   "property" : [ {
     "id" : "0",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "6",
     "type" : "owl:objectProperty"
   }, {
     "id" : "8",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "15",
+    "id" : "18",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "18",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "24",
+    "id" : "22",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "26",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "29",
+    "id" : "30",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "32",
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "34",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "35",
+    "id" : "36",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "37",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "40",
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "49",
@@ -703,49 +724,31 @@
     "id" : "50",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "11",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "52",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "53",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "54",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "56",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "57",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "58",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "59",
-    "type" : "rdfs:SubClassOf"
+    "id" : "55",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "60",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "61",
+    "id" : "62",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "65",
+    "id" : "64",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "67",
+    "id" : "66",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "69",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "5",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "71",
+    "id" : "73",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "74",
@@ -760,44 +763,38 @@
     "id" : "78",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "80",
+    "id" : "79",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "70",
+    "id" : "57",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "81",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "82",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "84",
+    "id" : "83",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "85",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "88",
+    "id" : "71",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "62",
+    "id" : "89",
     "type" : "owl:objectProperty"
   }, {
     "id" : "90",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "21",
+    "id" : "91",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "92",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "89",
+    "id" : "44",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "95",
-    "type" : "rdfs:SubClassOf"
+    "id" : "94",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "96",
     "type" : "rdfs:SubClassOf"
@@ -808,6 +805,9 @@
     "id" : "98",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "99",
     "type" : "rdfs:SubClassOf"
   }, {
@@ -815,61 +815,59 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "101",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "91",
+    "id" : "63",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/uri",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "2",
+    "label" : {
+      "IRI-based" : "uri",
+      "undefined" : "uri"
+    },
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "datatype" ],
     "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
   }, {
     "iri" : "http://erlangen-crm.org/efrbroo/R17_created",
     "baseIri" : "http://erlangen-crm.org/efrbroo",
-    "range" : "4",
+    "range" : "1",
     "label" : {
       "IRI-based" : "R17_created"
     },
-    "domain" : "4",
-    "subproperty" : [ "5" ],
+    "domain" : "1",
+    "subproperty" : [ "7" ],
     "attributes" : [ "external", "object" ],
-    "id" : "3"
+    "id" : "6"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/digital_image",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/performance",
     "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "10",
     "label" : {
-      "IRI-based" : "digital_image",
-      "undefined" : "digital image"
+      "IRI-based" : "performance",
+      "undefined" : "performance"
     },
-    "superproperty" : [ "11" ],
     "domain" : "9",
     "attributes" : [ "object" ],
     "id" : "8"
   }, {
-    "range" : "17",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "15"
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/tour_event",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "range" : "20",
-    "label" : {
-      "IRI-based" : "tour_event",
-      "undefined" : "tour event"
-    },
-    "superproperty" : [ "21" ],
+    "range" : "5",
     "domain" : "19",
-    "attributes" : [ "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "18"
   }, {
-    "range" : "25",
-    "domain" : "20",
+    "range" : "23",
+    "domain" : "9",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "24"
+    "id" : "22"
   }, {
     "range" : "28",
     "domain" : "27",
@@ -877,333 +875,335 @@
     "id" : "26"
   }, {
     "range" : "28",
-    "domain" : "30",
+    "domain" : "25",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "29"
+    "id" : "30"
   }, {
-    "range" : "1",
-    "domain" : "33",
+    "range" : "32",
+    "domain" : "28",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "32"
+    "id" : "31"
   }, {
-    "range" : "1",
-    "domain" : "9",
+    "range" : "28",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "16",
+    "domain" : "35",
     "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
-    "range" : "28",
-    "domain" : "36",
+    "range" : "16",
+    "domain" : "10",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "35"
+    "id" : "36"
   }, {
-    "range" : "39",
-    "domain" : "38",
+    "range" : "38",
+    "domain" : "16",
     "attributes" : [ "object", "anonymous" ],
     "id" : "37"
   }, {
-    "range" : "28",
-    "domain" : "41",
+    "range" : "16",
+    "domain" : "40",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "40"
+    "id" : "39"
   }, {
-    "range" : "28",
-    "domain" : "43",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/produced",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "produced",
+      "undefined" : "produced"
+    },
+    "superproperty" : [ "6" ],
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "range" : "20",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "15",
+    "domain" : "17",
     "attributes" : [ "object", "anonymous" ],
     "id" : "42"
   }, {
-    "range" : "7",
-    "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "49"
-  }, {
-    "range" : "7",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "50"
-  }, {
     "iri" : "http://erlangen-crm.org/current/P138i_has_representation",
     "baseIri" : "http://erlangen-crm.org/current",
-    "range" : "4",
+    "range" : "1",
     "label" : {
       "IRI-based" : "P138i_has_representation"
     },
-    "domain" : "4",
-    "subproperty" : [ "8" ],
+    "domain" : "1",
+    "subproperty" : [ "44" ],
     "attributes" : [ "external", "object" ],
-    "id" : "11"
+    "id" : "43"
   }, {
-    "range" : "47",
-    "domain" : "48",
+    "range" : "16",
+    "domain" : "9",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "52"
-  }, {
-    "range" : "7",
-    "domain" : "44",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "53"
-  }, {
-    "range" : "55",
-    "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "54"
-  }, {
-    "range" : "7",
-    "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "56"
-  }, {
-    "range" : "7",
-    "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "57"
+    "id" : "45"
   }, {
     "range" : "12",
-    "domain" : "13",
+    "domain" : "11",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "58"
+    "id" : "46"
   }, {
-    "range" : "22",
-    "domain" : "23",
+    "range" : "27",
+    "domain" : "48",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "59"
+    "id" : "47"
+  }, {
+    "range" : "15",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
   }, {
     "range" : "12",
     "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "27",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "27",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/manifestation",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "manifestation",
+      "undefined" : "manifestation"
+    },
+    "superproperty" : [ "57" ],
+    "domain" : "28",
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "range" : "27",
+    "domain" : "61",
     "attributes" : [ "object", "anonymous" ],
     "id" : "60"
   }, {
     "iri" : "http://erlangen-crm.org/current/P67_refers_to",
     "baseIri" : "http://erlangen-crm.org/current",
-    "range" : "4",
+    "range" : "1",
     "label" : {
       "IRI-based" : "P67_refers_to"
     },
-    "domain" : "4",
-    "subproperty" : [ "62" ],
+    "domain" : "1",
+    "subproperty" : [ "63" ],
     "attributes" : [ "external", "object" ],
-    "id" : "61"
-  }, {
-    "range" : "66",
-    "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "65"
-  }, {
-    "range" : "68",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "67"
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/manifestation",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "range" : "63",
-    "label" : {
-      "IRI-based" : "manifestation",
-      "undefined" : "manifestation"
-    },
-    "superproperty" : [ "70" ],
-    "domain" : "38",
-    "attributes" : [ "object" ],
-    "id" : "69"
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/produced",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "range" : "16",
-    "label" : {
-      "IRI-based" : "produced",
-      "undefined" : "produced"
-    },
-    "superproperty" : [ "3" ],
-    "domain" : "14",
-    "attributes" : [ "object" ],
-    "id" : "5"
-  }, {
-    "range" : "73",
-    "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "71"
-  }, {
-    "range" : "13",
-    "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "74"
-  }, {
-    "range" : "13",
-    "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "75"
-  }, {
-    "range" : "64",
-    "domain" : "63",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "77"
-  }, {
-    "range" : "13",
-    "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "78"
-  }, {
-    "range" : "16",
-    "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "80"
-  }, {
-    "iri" : "http://erlangen-crm.org/efrbroo/R4_carriers_provided_by",
-    "baseIri" : "http://erlangen-crm.org/efrbroo",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "R4_carriers_provided_by"
-    },
-    "domain" : "4",
-    "subproperty" : [ "69" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "70"
-  }, {
-    "range" : "16",
-    "domain" : "23",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "81"
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/tour_leg",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "range" : "83",
-    "label" : {
-      "IRI-based" : "tour_leg",
-      "undefined" : "tour leg"
-    },
-    "domain" : "79",
-    "attributes" : [ "object" ],
-    "id" : "82"
-  }, {
-    "range" : "13",
-    "domain" : "83",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "84"
-  }, {
-    "range" : "16",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "85"
-  }, {
-    "iri" : "http://erlangen-crm.org/current/P70_documents",
-    "baseIri" : "http://erlangen-crm.org/current",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "P70_documents"
-    },
-    "domain" : "4",
-    "subproperty" : [ "89" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "88"
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/associated_with",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "associated_with",
-      "undefined" : "associated with"
-    },
-    "superproperty" : [ "61" ],
-    "domain" : "38",
-    "subproperty" : [ "89" ],
-    "attributes" : [ "object" ],
     "id" : "62"
   }, {
-    "iri" : "http://erlangen-crm.org/efrbroo/R7i_has_example",
-    "baseIri" : "http://erlangen-crm.org/efrbroo",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "R7i_has_example"
-    },
-    "domain" : "4",
-    "subproperty" : [ "91" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "90"
+    "range" : "65",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
   }, {
-    "iri" : "http://purl.org/NET/c4dm/event.owl#sub_event",
-    "baseIri" : "http://purl.org/NET/c4dm/event.owl",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "sub_event"
-    },
-    "domain" : "4",
-    "subproperty" : [ "18" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "21"
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/uri",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "range" : "93",
-    "label" : {
-      "IRI-based" : "uri",
-      "undefined" : "uri"
-    },
-    "domain" : "4",
-    "attributes" : [ "datatype" ],
-    "id" : "92"
+    "range" : "68",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
   }, {
     "iri" : "https://w3id.org/live-music-event-ontology/0.1/documents",
     "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "range" : "94",
+    "range" : "70",
     "label" : {
       "IRI-based" : "documents",
       "undefined" : "documents"
     },
-    "superproperty" : [ "88", "62" ],
-    "domain" : "16",
+    "superproperty" : [ "71", "63" ],
+    "domain" : "5",
     "attributes" : [ "object" ],
-    "id" : "89"
+    "id" : "69"
   }, {
-    "range" : "38",
-    "domain" : "28",
+    "range" : "9",
+    "domain" : "72",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "95"
+    "id" : "73"
   }, {
-    "range" : "38",
-    "domain" : "7",
+    "range" : "59",
+    "domain" : "5",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "96"
+    "id" : "74"
   }, {
-    "range" : "38",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "97"
-  }, {
-    "range" : "20",
-    "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "98"
-  }, {
-    "range" : "20",
-    "domain" : "86",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "99"
-  }, {
-    "range" : "20",
-    "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "100"
-  }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/0.1/performance",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "76",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "9",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "9",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "58",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://erlangen-crm.org/efrbroo/R4_carriers_provided_by",
+    "baseIri" : "http://erlangen-crm.org/efrbroo",
+    "range" : "1",
     "label" : {
-      "IRI-based" : "performance",
-      "undefined" : "performance"
+      "IRI-based" : "R4_carriers_provided_by"
     },
-    "domain" : "20",
-    "attributes" : [ "object" ],
-    "id" : "101"
+    "domain" : "1",
+    "subproperty" : [ "55" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "5",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "82",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://erlangen-crm.org/current/P70_documents",
+    "baseIri" : "http://erlangen-crm.org/current",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "P70_documents"
+    },
+    "domain" : "1",
+    "subproperty" : [ "69" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "71"
   }, {
     "iri" : "https://w3id.org/live-music-event-ontology/0.1/item",
     "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
-    "range" : "1",
+    "range" : "12",
     "label" : {
       "IRI-based" : "item",
       "undefined" : "item"
     },
     "superproperty" : [ "90" ],
-    "domain" : "63",
+    "domain" : "56",
     "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://erlangen-crm.org/efrbroo/R7i_has_example",
+    "baseIri" : "http://erlangen-crm.org/efrbroo",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "R7i_has_example"
+    },
+    "domain" : "1",
+    "subproperty" : [ "89" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://purl.org/NET/c4dm/event.owl#sub_event",
+    "baseIri" : "http://purl.org/NET/c4dm/event.owl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "sub_event"
+    },
+    "domain" : "1",
+    "subproperty" : [ "92" ],
+    "attributes" : [ "external", "object" ],
     "id" : "91"
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/digital_image",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "digital_image",
+      "undefined" : "digital image"
+    },
+    "superproperty" : [ "43" ],
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/tour_leg",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "tour_leg",
+      "undefined" : "tour leg"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "range" : "25",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "25",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "25",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/tour_event",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "tour_event",
+      "undefined" : "tour event"
+    },
+    "superproperty" : [ "91" ],
+    "domain" : "95",
+    "attributes" : [ "object" ],
+    "id" : "92"
+  }, {
+    "range" : "25",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "25",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "27",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/associated_with",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "associated_with",
+      "undefined" : "associated with"
+    },
+    "superproperty" : [ "62" ],
+    "domain" : "28",
+    "subproperty" : [ "69" ],
+    "attributes" : [ "object" ],
+    "id" : "63"
   } ]
 }
