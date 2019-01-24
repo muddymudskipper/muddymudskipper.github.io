@@ -1,0 +1,817 @@
+[
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Program",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Program"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/PromotionalArtifact"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/manifestation",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactExpression"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "manifestation"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactManifestation"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+            {
+                "@id": "http://erlangen-crm.org/efrbroo/R4_carriers_provided_by"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Ontology"
+        ],
+        "http://purl.org/dc/elements/1.1/creator": [
+            {
+                "@value": "Florian Thalmann"
+            },
+            {
+                "@value": "Thomas Wilmering"
+            }
+        ],
+        "http://purl.org/dc/terms/license": [
+            {
+                "@id": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "The Live Music Event Ontology"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#imports": [
+            {
+                "@id": "http://erlangen-crm.org/current/"
+            },
+            {
+                "@id": "http://erlangen-crm.org/efrbroo/"
+            },
+            {
+                "@id": "http://purl.org/dc/terms/"
+            },
+            {
+                "@id": "http://purl.org/ontology/mo/"
+            },
+            {
+                "@id": "http://purl.org/NET/c4dm/event.owl#"
+            }
+        ],
+        "http://www.w3.org/2002/07/owl#versionInfo": [
+            {
+                "@value": "0.1 (alpha)"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/produced",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/CapturingEvent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "produced"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/CapturingArtifactExpression"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+            {
+                "@id": "http://erlangen-crm.org/efrbroo/R17_created"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/tour_leg",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/Tour"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "tour leg"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/TourLeg"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Diary",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Diary"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/FanMadeArtifact"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Photo",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Photo"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/CapturingArtifactExpression"
+            },
+            {
+                "@id": "http://erlangen-crm.org/current/E38_Image"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Badges",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Badges"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/PromotionalArtifact"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/LiveMusicShow",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Live Music Show"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/LiveMusicEvent"
+            },
+            {
+                "@id": "http://purl.org/ontology/mo/Performance"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Sticker",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Sticker"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/PromotionalArtifact"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/MusicPerformance",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Music Performance"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/LiveMusicEvent"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/AudioSignal",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Audio Signal"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://purl.org/ontology/mo/Signal"
+            },
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/CapturingArtifactExpression"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/PhysicalArtifactItem",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Physical Artifact Item"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactItem"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Flyer",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Flyer"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/PromotionalArtifact"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/DigitalArtifactItem",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Digital Artifact Item"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactItem"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Tour",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Tour"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/LiveMusicEvent"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactManifestation",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Artifact Manifestation"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://erlangen-crm.org/efrbroo/F3_Manifestation_Product_Type"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/PrivateConcert",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Private Concert"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/Concert"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/documents",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/CapturingArtifactExpression"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "documents"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+            {
+                "@id": "http://erlangen-crm.org/current/P70_documents"
+            },
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/associated_with"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/CapturingEvent",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Capturing Event"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://purl.org/NET/c4dm/event.owl#Event"
+            },
+            {
+                "@id": "http://erlangen-crm.org/efrbroo/F29_Recording_Event"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/uri",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#DatatypeProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "uri"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Letter",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Letter"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/FanMadeArtifact"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Poster",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Poster"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/PromotionalArtifact"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/digital_image",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/PhysicalArtifactItem"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "digital image"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/DigitalImage"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+            {
+                "@id": "http://erlangen-crm.org/current/P138i_has_representation"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/LiveMusicEvent",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Live Music Event"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://erlangen-crm.org/current/E5_Event"
+            },
+            {
+                "@id": "http://purl.org/NET/c4dm/event.owl#Event"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/associated_with",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactExpression"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "associated with"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/LiveMusicEvent"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+            {
+                "@id": "http://erlangen-crm.org/current/P67_refers_to"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Scrapbook",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Scrapbook"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/FanMadeArtifact"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/TourLeg",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Tour Leg"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/LiveMusicEvent"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Festival",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Festival"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/LiveMusicShow"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/DigitalImage",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Digital Image"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Showcase",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Showcase"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/LiveMusicShow"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Fanzine",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Fanzine"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/FanMadeArtifact"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactItem",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Artifact Item"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://erlangen-crm.org/efrbroo/F5_Item"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactExpression",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Artifact Expression"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://erlangen-crm.org/efrbroo/F22_Self-Contained_Expression"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/VideoSignal",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Video Signal"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/CapturingArtifactExpression"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/FanMadeArtifact",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Fan Made Artifact"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactExpression"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/item",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactManifestation"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "item"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactItem"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+            {
+                "@id": "http://erlangen-crm.org/efrbroo/R7i_has_example"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/performance",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/LiveMusicShow"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "performance"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/MusicPerformance"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/tour_event",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#ObjectProperty"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#domain": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/TourLeg"
+            },
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/Tour"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "tour event"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#range": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/LiveMusicShow"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+            {
+                "@id": "http://purl.org/NET/c4dm/event.owl#sub_event"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Concert",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Concert"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/LiveMusicShow"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/Story",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Story"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/FanMadeArtifact"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/PromotionalArtifact",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Promotional Artifact"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactExpression"
+            }
+        ]
+    },
+    {
+        "@id": "https://w3id.org/live-music-event-ontology/0.1/CapturingArtifactExpression",
+        "@type": [
+            "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+            {
+                "@value": "Capturing Artifact Expression"
+            }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+            {
+                "@id": "http://erlangen-crm.org/efrbroo/F26_Recording"
+            },
+            {
+                "@id": "https://w3id.org/live-music-event-ontology/0.1/ArtifactExpression"
+            },
+            {
+                "@id": "http://erlangen-crm.org/current/E31_Document"
+            }
+        ]
+    }
+]

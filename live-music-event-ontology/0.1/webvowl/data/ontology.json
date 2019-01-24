@@ -2,11 +2,11 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.2-SNAPSHOT), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "https://w3id.org/live-music-event-ontology/alpha_1", "http://purl.org/NET/c4dm/event.owl", "http://erlangen-crm.org/efrbroo", "http://www.w3.org/2000/01/rdf-schema", "http://erlangen-crm.org/current", "http://purl.org/ontology/mo", "http://www.w3.org/2001/XMLSchema" ],
+    "baseIris" : [ "https://w3id.org/live-music-event-ontology/0.1", "http://purl.org/NET/c4dm/event.owl", "http://erlangen-crm.org/efrbroo", "http://www.w3.org/2000/01/rdf-schema", "http://erlangen-crm.org/current", "http://purl.org/ontology/mo", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
       "undefined" : "The Live Music Event Ontology"
     },
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/",
     "version" : "alpha 1",
     "author" : [ "Thomas Wilmering", "Florian Thalmann" ],
     "other" : {
@@ -191,8 +191,8 @@
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/DigitalArtifactItem",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/DigitalArtifactItem",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "DigitalArtifactItem",
@@ -201,8 +201,8 @@
     "id" : "11",
     "superClasses" : [ "12" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/ArtifactItem",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/ArtifactItem",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "ArtifactItem",
@@ -232,8 +232,8 @@
     "attributes" : [ "external" ],
     "id" : "20"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Scrapbook",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Scrapbook",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Scrapbook",
@@ -242,8 +242,8 @@
     "id" : "24",
     "superClasses" : [ "25" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Festival",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Festival",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Festival",
@@ -252,8 +252,8 @@
     "id" : "29",
     "superClasses" : [ "9" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Tour",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Tour",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Tour",
@@ -262,8 +262,8 @@
     "id" : "40",
     "superClasses" : [ "16" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/ArtifactExpression",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/ArtifactExpression",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "ArtifactExpression",
@@ -273,8 +273,8 @@
     "id" : "28",
     "superClasses" : [ "32" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Program",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Program",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Program",
@@ -283,8 +283,8 @@
     "id" : "51",
     "superClasses" : [ "27" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/CapturingArtifactExpression",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/CapturingArtifactExpression",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "CapturingArtifactExpression",
@@ -294,8 +294,8 @@
     "id" : "5",
     "superClasses" : [ "58", "59", "28" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Sticker",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Sticker",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Sticker",
@@ -304,8 +304,8 @@
     "id" : "48",
     "superClasses" : [ "27" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Photo",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Photo",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Photo",
@@ -314,8 +314,8 @@
     "id" : "21",
     "superClasses" : [ "20", "5" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/LiveMusicShow",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/LiveMusicShow",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "LiveMusicShow",
@@ -335,8 +335,8 @@
     "attributes" : [ "external" ],
     "id" : "65"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/FanMadeArtifact",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/FanMadeArtifact",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "FanMadeArtifact",
@@ -346,8 +346,8 @@
     "id" : "25",
     "superClasses" : [ "28" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/PromotionalArtifact",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/PromotionalArtifact",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "PromotionalArtifact",
@@ -357,8 +357,8 @@
     "id" : "27",
     "superClasses" : [ "28" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/ArtifactManifestation",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/ArtifactManifestation",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "ArtifactManifestation",
@@ -367,8 +367,8 @@
     "id" : "56",
     "superClasses" : [ "82" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/VideoSignal",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/VideoSignal",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "VideoSignal",
@@ -377,8 +377,8 @@
     "id" : "4",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/PhysicalArtifactItem",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/PhysicalArtifactItem",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "PhysicalArtifactItem",
@@ -387,8 +387,8 @@
     "id" : "14",
     "superClasses" : [ "12" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/TourLeg",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/TourLeg",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "TourLeg",
@@ -397,8 +397,8 @@
     "id" : "35",
     "superClasses" : [ "16" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/LiveMusicEvent",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/LiveMusicEvent",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "LiveMusicEvent",
@@ -418,8 +418,8 @@
     "attributes" : [ "external" ],
     "id" : "38"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Letter",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Letter",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Letter",
@@ -438,8 +438,8 @@
     "attributes" : [ "external" ],
     "id" : "32"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Story",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Story",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Story",
@@ -448,8 +448,8 @@
     "id" : "86",
     "superClasses" : [ "25" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/CapturingEvent",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/CapturingEvent",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "CapturingEvent",
@@ -458,8 +458,8 @@
     "id" : "17",
     "superClasses" : [ "15", "65" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/AudioSignal",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/AudioSignal",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "AudioSignal",
@@ -468,8 +468,8 @@
     "id" : "19",
     "superClasses" : [ "76", "5" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/DigitalImage",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/DigitalImage",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "DigitalImage",
@@ -487,8 +487,8 @@
     "attributes" : [ "external" ],
     "id" : "23"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Badges",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Badges",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Badges",
@@ -529,8 +529,8 @@
     "attributes" : [ "external" ],
     "id" : "13"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Showcase",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Showcase",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Showcase",
@@ -556,8 +556,8 @@
       "IRI-based" : "anyURI"
     }
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Diary",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Diary",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Diary",
@@ -566,8 +566,8 @@
     "id" : "84",
     "superClasses" : [ "25" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Poster",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Poster",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Poster",
@@ -593,8 +593,8 @@
     "attributes" : [ "external" ],
     "id" : "76"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Flyer",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Flyer",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Flyer",
@@ -603,8 +603,8 @@
     "id" : "61",
     "superClasses" : [ "27" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/PrivateConcert",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/PrivateConcert",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "PrivateConcert",
@@ -613,8 +613,8 @@
     "id" : "67",
     "superClasses" : [ "68" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/MusicPerformance",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/MusicPerformance",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "MusicPerformance",
@@ -633,8 +633,8 @@
     "attributes" : [ "external" ],
     "id" : "59"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Fanzine",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Fanzine",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Fanzine",
@@ -643,8 +643,8 @@
     "id" : "87",
     "superClasses" : [ "25" ]
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/Concert",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/Concert",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Concert",
@@ -821,8 +821,8 @@
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/uri",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/uri",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "2",
     "label" : {
       "IRI-based" : "uri",
@@ -848,8 +848,8 @@
     "attributes" : [ "external", "object" ],
     "id" : "6"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/performance",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/performance",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "10",
     "label" : {
       "IRI-based" : "performance",
@@ -909,8 +909,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "39"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/produced",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/produced",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "5",
     "label" : {
       "IRI-based" : "produced",
@@ -977,8 +977,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "54"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/manifestation",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/manifestation",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "56",
     "label" : {
       "IRI-based" : "manifestation",
@@ -1015,8 +1015,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "66"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/documents",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/documents",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "70",
     "label" : {
       "IRI-based" : "documents",
@@ -1094,8 +1094,8 @@
     "attributes" : [ "external", "object" ],
     "id" : "71"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/item",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/item",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "12",
     "label" : {
       "IRI-based" : "item",
@@ -1128,8 +1128,8 @@
     "attributes" : [ "external", "object" ],
     "id" : "91"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/digital_image",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/digital_image",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "93",
     "label" : {
       "IRI-based" : "digital_image",
@@ -1140,8 +1140,8 @@
     "attributes" : [ "object" ],
     "id" : "44"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/tour_leg",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/tour_leg",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "35",
     "label" : {
       "IRI-based" : "tour_leg",
@@ -1166,8 +1166,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "98"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/tour_event",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/tour_event",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "9",
     "label" : {
       "IRI-based" : "tour_event",
@@ -1193,8 +1193,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "101"
   }, {
-    "iri" : "https://w3id.org/live-music-event-ontology/alpha_1/associated_with",
-    "baseIri" : "https://w3id.org/live-music-event-ontology/alpha_1",
+    "iri" : "https://w3id.org/live-music-event-ontology/0.1/associated_with",
+    "baseIri" : "https://w3id.org/live-music-event-ontology/0.1",
     "range" : "16",
     "label" : {
       "IRI-based" : "associated_with",

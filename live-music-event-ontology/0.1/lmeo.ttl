@@ -3,7 +3,7 @@
 @prefix ecrm: <http://erlangen-crm.org/current/> .
 @prefix efrbroo: <http://erlangen-crm.org/efrbroo/> .
 @prefix event: <http://purl.org/NET/c4dm/event.owl#> .
-@prefix lmeo: <https://w3id.org/live-music-event-ontology/alpha_1/> .
+@prefix lmeo: <https://w3id.org/live-music-event-ontology/0.1/> .
 @prefix mo: <http://purl.org/ontology/mo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -21,7 +21,7 @@ lmeo: a owl:Ontology ;
         event:,
         dcterms:,
         mo: ;
-    owl:versionInfo "alpha 1" .
+    owl:versionInfo "0.1 (alpha)" .
 
 lmeo:AudioSignal a owl:Class ;
     rdfs:label "Audio Signal" ;
